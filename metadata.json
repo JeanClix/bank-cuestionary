@@ -1,0 +1,5 @@
+{
+  "name": "IntelliQuiz DocX",
+  "description": "An interactive assessment platform that transforms Word documents into dynamic learning experiences using Gemini AI.",
+  "requestFramePermissions": []
+}
