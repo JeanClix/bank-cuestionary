@@ -1,11 +1,11 @@
-
 import React, { useState, useEffect } from 'react';
-import { Question, AppView, Quiz } from './types';
+import { Question, AppView } from './types';
 import FileUploader from './components/FileUploader';
 import QuizEngine from './components/QuizEngine';
 import ResultView from './components/ResultView';
 import QuestionBankManager from './components/QuestionBankManager';
 import { parseQuizFromText } from './services/geminiService';
+import { initialBank } from './data/initialBank';
 
 const App: React.FC = () => {
   const [view, setView] = useState<AppView>(AppView.HOME);
@@ -15,33 +15,23 @@ const App: React.FC = () => {
   const [error, setError] = useState<string | null>(null);
   const [score, setScore] = useState(0);
 
-  // Load initial data and localStorage on mount
   useEffect(() => {
-    const loadData = async () => {
-      const savedBank = localStorage.getItem('intelliQuiz_bank');
-      if (savedBank && savedBank !== '[]') {
-        try {
+    const loadInitialData = () => {
+      try {
+        const savedBank = localStorage.getItem('intelliQuiz_bank');
+        if (savedBank && savedBank !== '[]') {
           setBank(JSON.parse(savedBank));
-        } catch (e) {
-          console.error("Error loading bank", e);
+        } else {
+          setBank(initialBank || []);
         }
-      } else {
-        // Carga inicial desde el archivo JSON si no hay nada guardado
-        try {
-          const response = await fetch('./data/initialBank.json');
-          if (response.ok) {
-            const initialData = await response.json();
-            setBank(initialData);
-          }
-        } catch (e) {
-          console.error("No se pudo cargar el banco inicial predefinido", e);
-        }
+      } catch (e) {
+        console.error("Error al cargar el banco de preguntas:", e);
+        setBank(initialBank || []);
       }
     };
-    loadData();
+    loadInitialData();
   }, []);
 
-  // Save bank to localStorage whenever it changes
   useEffect(() => {
     if (bank.length > 0) {
       localStorage.setItem('intelliQuiz_bank', JSON.stringify(bank));
@@ -52,14 +42,14 @@ const App: React.FC = () => {
     setView(AppView.LOADING);
     setError(null);
     try {
-      // @ts-ignore
-      const mammoth = window.mammoth;
+      const mammoth = (window as any).mammoth;
+      if (!mammoth) throw new Error("Mammoth library not loaded");
+      
       const arrayBuffer = await file.arrayBuffer();
       const result = await mammoth.extractRawText({ arrayBuffer });
       
       const parsedQuiz = await parseQuizFromText(result.value);
       
-      // Merge unique questions into bank
       const newQuestions = parsedQuiz.questions.filter(
         nq => !bank.some(bq => bq.questionText === nq.questionText)
       );
@@ -67,20 +57,18 @@ const App: React.FC = () => {
       const updatedBank = [...bank, ...newQuestions];
       setBank(updatedBank);
       
-      // Test inmediato con las preguntas del archivo, desordenadas
       const shuffled = [...parsedQuiz.questions].sort(() => 0.5 - Math.random());
       setCurrentQuiz(shuffled);
       setMissedQuestions([]);
       setView(AppView.QUIZ);
     } catch (err) {
-      setError("No se pudo procesar el documento. Intenta con otro formato.");
+      setError("No se pudo procesar el documento. Asegúrate de que sea un archivo .docx válido.");
       setView(AppView.HOME);
     }
   };
 
   const startQuizFromBank = () => {
     if (bank.length === 0) return;
-    // Se utiliza TODO el banco de preguntas y se desordena
     const shuffled = [...bank].sort(() => 0.5 - Math.random());
     setCurrentQuiz(shuffled);
     setMissedQuestions([]);
@@ -94,7 +82,7 @@ const App: React.FC = () => {
   };
 
   const addQuestionToBank = (q: Question) => {
-    setBank([...bank, q]);
+    setBank(prev => [...prev, q]);
   };
 
   const importToBank = (questions: Question[]) => {
@@ -105,7 +93,7 @@ const App: React.FC = () => {
   };
 
   const deleteFromBank = (id: string) => {
-    setBank(bank.filter(q => q.id !== id));
+    setBank(prev => prev.filter(q => q.id !== id));
   };
 
   return (
@@ -146,7 +134,7 @@ const App: React.FC = () => {
           <div className="space-y-12 py-10">
             <div className="text-center max-w-2xl mx-auto">
               <h2 className="text-4xl font-black text-slate-900 mb-4 tracking-tight">Practica con Inteligencia Artificial.</h2>
-              <p className="text-lg text-slate-600">Entrena con el banco de 83 preguntas precargadas o sube tus propios documentos Word para generar nuevos desafíos.</p>
+              <p className="text-lg text-slate-600">Entrena con el banco de {bank.length} preguntas o sube tus propios documentos Word.</p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8">
@@ -182,7 +170,8 @@ const App: React.FC = () => {
         {view === AppView.LOADING && (
           <div className="flex flex-col items-center justify-center min-h-[400px]">
             <div className="w-12 h-12 border-4 border-indigo-600 border-t-transparent rounded-full animate-spin"></div>
-            <p className="mt-6 font-bold text-slate-700">Gemini está procesando tus preguntas...</p>
+            <p className="mt-6 font-bold text-slate-700">Gemini está analizando el documento...</p>
+            <p className="text-slate-400 text-sm mt-2">Esto puede tomar unos segundos</p>
           </div>
         )}
 
