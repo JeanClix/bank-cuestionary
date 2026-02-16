@@ -46,7 +46,6 @@ const QuestionBankManager: React.FC<Props> = ({ bank, onAdd, onImport, onDelete,
       } catch (err) {
         alert("Error al leer el archivo JSON. Asegúrate de que es un archivo válido.");
       }
-      // Reset input
       if (fileInputRef.current) fileInputRef.current.value = '';
     };
     reader.readAsText(file);
@@ -57,7 +56,7 @@ const QuestionBankManager: React.FC<Props> = ({ bank, onAdd, onImport, onDelete,
       <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4 bg-white p-6 rounded-3xl border border-slate-200 shadow-sm">
         <div>
           <h2 className="text-2xl font-black text-slate-900">Banco de Preguntas</h2>
-          <p className="text-slate-500 text-sm">Gestiona y personaliza tu contenido local.</p>
+          <p className="text-slate-500 text-sm">Gestiona tu base de conocimientos local.</p>
         </div>
         <div className="flex flex-wrap gap-2">
           <input 
@@ -87,7 +86,7 @@ const QuestionBankManager: React.FC<Props> = ({ bank, onAdd, onImport, onDelete,
             onClick={() => setIsAdding(!isAdding)}
             className="px-4 py-2 bg-indigo-600 text-white rounded-xl font-bold text-sm hover:bg-indigo-700 transition-colors flex items-center gap-2 shadow-lg shadow-indigo-100"
           >
-            {isAdding ? 'Cerrar' : '+ Añadir Manual'}
+            {isAdding ? 'Cerrar' : '+ Introducir Manualmente'}
           </button>
         </div>
       </div>
@@ -102,7 +101,7 @@ const QuestionBankManager: React.FC<Props> = ({ bank, onAdd, onImport, onDelete,
         <div className="text-center py-20 bg-white rounded-3xl border border-dashed border-slate-300">
           <div className="text-4xl mb-4">📂</div>
           <p className="text-slate-400 font-medium">No hay preguntas en el banco local.</p>
-          <p className="text-slate-400 text-sm mt-1">Sube un Word, importa un JSON o añade una manualmente.</p>
+          <p className="text-slate-400 text-sm mt-1">Sube un Word, importa un JSON o introduce una manualmente.</p>
         </div>
       ) : (
         <div className="grid gap-4">
