@@ -18,12 +18,26 @@ const App: React.FC = () => {
   useEffect(() => {
     const loadInitialData = () => {
       try {
-        const savedBank = localStorage.getItem('intelliQuiz_bank');
-        if (savedBank && savedBank !== '[]') {
-          setBank(JSON.parse(savedBank));
+        const savedBankStr = localStorage.getItem('intelliQuiz_bank');
+        let currentBank: Question[] = [];
+        
+        if (savedBankStr && savedBankStr !== '[]') {
+          currentBank = JSON.parse(savedBankStr);
+          // Si el banco guardado tiene menos preguntas que el inicial, 
+          // probablemente sea una versión antigua. Ofrecemos fusionar o reemplazar.
+          if (currentBank.length < initialBank.length) {
+             const merged = [...currentBank];
+             initialBank.forEach(iq => {
+               if (!merged.some(mq => mq.questionText === iq.questionText)) {
+                 merged.push(iq);
+               }
+             });
+             currentBank = merged;
+          }
         } else {
-          setBank(initialBank || []);
+          currentBank = initialBank || [];
         }
+        setBank(currentBank);
       } catch (e) {
         console.error("Error al cargar el banco de preguntas:", e);
         setBank(initialBank || []);
@@ -96,6 +110,13 @@ const App: React.FC = () => {
     setBank(prev => prev.filter(q => q.id !== id));
   };
 
+  const resetBankToDefault = () => {
+    if (window.confirm("¿Estás seguro de que quieres restablecer el banco al estado inicial? Se perderán las preguntas que hayas añadido manualmente.")) {
+      setBank(initialBank);
+      localStorage.setItem('intelliQuiz_bank', JSON.stringify(initialBank));
+    }
+  };
+
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col font-sans text-slate-900">
       <header className="bg-white border-b border-slate-200 sticky top-0 z-50">
@@ -154,13 +175,21 @@ const App: React.FC = () => {
                   </h3>
                   <p className="text-slate-500 mb-6">Tu banco actual contiene <strong>{bank.length}</strong> preguntas. El test usará todas las preguntas en orden aleatorio.</p>
                 </div>
-                <button 
-                  onClick={startQuizFromBank}
-                  disabled={bank.length === 0}
-                  className="w-full py-4 bg-slate-900 text-white rounded-2xl font-bold hover:bg-black transition-all disabled:bg-slate-200 disabled:text-slate-400 shadow-lg shadow-slate-200"
-                >
-                  Iniciar Test Completo ({bank.length} preguntas)
-                </button>
+                <div className="space-y-2">
+                   <button 
+                    onClick={startQuizFromBank}
+                    disabled={bank.length === 0}
+                    className="w-full py-4 bg-slate-900 text-white rounded-2xl font-bold hover:bg-black transition-all disabled:bg-slate-200 disabled:text-slate-400 shadow-lg shadow-slate-200"
+                  >
+                    Iniciar Test Completo ({bank.length} preguntas)
+                  </button>
+                  <button 
+                    onClick={resetBankToDefault}
+                    className="w-full py-2 text-slate-400 text-xs hover:text-indigo-600 transition-colors"
+                  >
+                    Restablecer banco inicial
+                  </button>
+                </div>
               </div>
             </div>
             {error && <p className="text-rose-500 text-center font-bold bg-rose-50 p-4 rounded-xl border border-rose-100">{error}</p>}

@@ -359,7 +359,7 @@ export const initialBank: Question[] = [
     "questionText": "Estoy diseñando un endpoint como este GET /customers?personalIdentification=ABCD12345GHL ¿Es correcto?",
     "type": "single",
     "options": [
-      { "id": "q30_o1", "text": "No, ya que the query param es un campo de data sensible. Estos campos no deben viajar por la URI ya que pueden quedarse en dispositivos de redes y ademas permiten que un tercero pueda interceptar y capturar data personal", "isCorrect": true },
+      { "id": "q30_o1", "text": "No, ya que el query param es un campo de data sensible. Estos campos no deben viajar por la URI ya que pueden quedarse en dispositivos de redes y ademas permiten que un tercero pueda interceptar y capturar data personal", "isCorrect": true },
       { "id": "q30_o2", "text": "SI, ya que el nombre esta en plural, es un sustantivo y el query param esta acorde a los estandares", "isCorrect": false },
       { "id": "q30_o3", "text": "No, ya que no esta entre comillas el query param", "isCorrect": false }
     ],
@@ -438,7 +438,7 @@ export const initialBank: Question[] = [
       { "id": "q36_o4", "text": "En work se muestran los logs en nivel debug, info, warning y error", "isCorrect": true }
     ],
     "hint": "ASO permite ver lo que ocurre dentro de su propio contenedor de ejecución.",
-    "explanation": "Las trazas muestran la actividad interna de las librerías ASO y los mensajes programados por el desarrollador, pero no pueden ver los logs internos de sistemas externos o backends."
+    "explanation": "Las trazas muestran la actividad interna de las librías ASO y los mensajes programados por el desarrollador, pero no pueden ver los logs internos de sistemas externos o backends."
   },
   {
     "id": "q37",
@@ -712,7 +712,7 @@ export const initialBank: Question[] = [
   },
   {
     "id": "q59",
-    "questionText": "En que casos se presenta el siguiente error en el servicio ASO: TransporteRest.sendReceive.error java.lang.IllegalStateException: Entity input stream has already been closed?",
+    "questionText": "En en casos se presenta el siguiente error en el servicio ASO: TransporteRest.sendReceive.error java.lang.IllegalStateException: Entity input stream has already been closed?",
     "type": "single",
     "options": [
       { "id": "q59_o1", "text": "Ninguno", "isCorrect": false },
