@@ -6,10 +6,26 @@ export const initialBank: Question[] = [
     "questionText": "¿Cuál es la diferencia entre Restful y RestLess?",
     "type": "single",
     "options": [
-      { "id": "q1_o1", "text": "Restful esta orientado aobjetos y restless a acciones", "isCorrect": false },
-      { "id": "q1_o2", "text": "Restful esta orientado a recursos y restless a acciones", "isCorrect": true },
-      { "id": "q1_o3", "text": "Restful esta orientado a acciones y restless a objetos", "isCorrect": false },
-      { "id": "q1_o4", "text": "Restful esta orientado a acciones y restless a recursos", "isCorrect": false }
+      {
+        "id": "q1_o1",
+        "text": "Restful esta orientado aobjetos y restless a acciones",
+        "isCorrect": false
+      },
+      {
+        "id": "q1_o2",
+        "text": "Restful esta orientado a recursos y restless a acciones",
+        "isCorrect": true
+      },
+      {
+        "id": "q1_o3",
+        "text": "Restful esta orientado a acciones y restless a objetos",
+        "isCorrect": false
+      },
+      {
+        "id": "q1_o4",
+        "text": "Restful esta orientado a acciones y restless a recursos",
+        "isCorrect": false
+      }
     ],
     "hint": "Piensa en qué tipo de elemento (sustantivo o verbo) se enfoca cada enfoque.",
     "explanation": "RESTful se centra en la manipulación de recursos identificables mediante URIs, mientras que RESTless suele basarse en la ejecución de operaciones o acciones."
@@ -19,10 +35,26 @@ export const initialBank: Question[] = [
     "questionText": "¿Cuáles son los tipos de datos complejos que soporta un JSON?",
     "type": "multiple",
     "options": [
-      { "id": "q2_o1", "text": "Array", "isCorrect": true },
-      { "id": "q2_o2", "text": "Double", "isCorrect": false },
-      { "id": "q2_o3", "text": "Object", "isCorrect": true },
-      { "id": "q2_o4", "text": "String", "isCorrect": false }
+      {
+        "id": "q2_o1",
+        "text": "Array",
+        "isCorrect": true
+      },
+      {
+        "id": "q2_o2",
+        "text": "Double",
+        "isCorrect": false
+      },
+      {
+        "id": "q2_o3",
+        "text": "Object",
+        "isCorrect": true
+      },
+      {
+        "id": "q2_o4",
+        "text": "String",
+        "isCorrect": false
+      }
     ],
     "hint": "Los tipos complejos permiten agrupar múltiples valores o pares clave-valor.",
     "explanation": "JSON soporta tipos primitivos (string, number, boolean, null) y tipos complejos como Objetos (colecciones de pares clave-valor) y Arrays (listas ordenadas de valores)."
@@ -32,8 +64,16 @@ export const initialBank: Question[] = [
     "questionText": "¿El método HTTP DELETE permite consultar el detalle de un recurso?",
     "type": "single",
     "options": [
-      { "id": "q3_o1", "text": "false", "isCorrect": true },
-      { "id": "q3_o2", "text": "true", "isCorrect": false }
+      {
+        "id": "q3_o1",
+        "text": "false",
+        "isCorrect": true
+      },
+      {
+        "id": "q3_o2",
+        "text": "true",
+        "isCorrect": false
+      }
     ],
     "hint": "Considera el significado semántico del verbo DELETE.",
     "explanation": "El método DELETE se utiliza exclusivamente para eliminar un recurso. Para consultar el detalle de un recurso se debe utilizar el método GET."
@@ -43,9 +83,21 @@ export const initialBank: Question[] = [
     "questionText": "¿Que es un API y para qué se utiliza?",
     "type": "single",
     "options": [
-      { "id": "q4_o1", "text": "Agrupación de operaciones con un sentido funcional determinado", "isCorrect": true },
-      { "id": "q4_o2", "text": "Operación con sentido funcional, como el alta de una tarjeta", "isCorrect": false },
-      { "id": "q4_o3", "text": "Recurso que agrupa un conjunto de operaciones públicas y privadas", "isCorrect": false }
+      {
+        "id": "q4_o1",
+        "text": "Agrupación de operaciones con un sentido funcional determinado",
+        "isCorrect": true
+      },
+      {
+        "id": "q4_o2",
+        "text": "Operación con sentido funcional, como el alta de una tarjeta",
+        "isCorrect": false
+      },
+      {
+        "id": "q4_o3",
+        "text": "Recurso que agrupa un conjunto de operaciones públicas y privadas",
+        "isCorrect": false
+      }
     ],
     "hint": "Una API no es solo una operación individual, sino un conjunto organizado.",
     "explanation": "Una API es un conjunto de definiciones y protocolos que permiten la comunicación entre aplicaciones, agrupando operaciones bajo un propósito funcional específico."
@@ -55,8 +107,16 @@ export const initialBank: Question[] = [
     "questionText": "¿En el catalogo global se cuenta con un catalogo de errores?",
     "type": "single",
     "options": [
-      { "id": "q5_o1", "text": "false", "isCorrect": false },
-      { "id": "q5_o2", "text": "true", "isCorrect": true }
+      {
+        "id": "q5_o1",
+        "text": "false",
+        "isCorrect": false
+      },
+      {
+        "id": "q5_o2",
+        "text": "true",
+        "isCorrect": true
+      }
     ],
     "hint": "Revisa si los estándares globales incluyen una gestión centralizada de excepciones.",
     "explanation": "El catálogo global incluye definiciones estándar para errores para asegurar consistencia entre diferentes servicios y dominios."
@@ -66,10 +126,26 @@ export const initialBank: Question[] = [
     "questionText": "¿Cuando se debería iniciar la creacion de la metadata en la herramienta de la metaInformation?",
     "type": "single",
     "options": [
-      { "id": "q6_o1", "text": "Al inicio de todo el análisis", "isCorrect": false },
-      { "id": "q6_o2", "text": "Después de la publicación de la API en el API DT", "isCorrect": true },
-      { "id": "q6_o3", "text": "Antes de publicar l API en el API DT", "isCorrect": false },
-      { "id": "q6_o4", "text": "Antes de crear la solicitud en el API DT", "isCorrect": false }
+      {
+        "id": "q6_o1",
+        "text": "Al inicio de todo el análisis",
+        "isCorrect": false
+      },
+      {
+        "id": "q6_o2",
+        "text": "Después de la publicación de la API en el API DT",
+        "isCorrect": true
+      },
+      {
+        "id": "q6_o3",
+        "text": "Antes de publicar l API en el API DT",
+        "isCorrect": false
+      },
+      {
+        "id": "q6_o4",
+        "text": "Antes de crear la solicitud en el API DT",
+        "isCorrect": false
+      }
     ],
     "hint": "La metadata requiere que la definición de la API ya esté formalizada en la herramienta de diseño.",
     "explanation": "De acuerdo con el flujo de ASO, la creación de metadata ocurre una vez que el diseño ha sido publicado en el API DT para asegurar que la información coincida."
@@ -79,9 +155,21 @@ export const initialBank: Question[] = [
     "questionText": "¿Es cierto que el flujo ASO 2.0 se divide en 3 tickets?",
     "type": "single",
     "options": [
-      { "id": "q7_o1", "text": "Si es cierto se divide en Diseño, Publicación y Despliegue", "isCorrect": false },
-      { "id": "q7_o2", "text": "Si es cierto Diseño, Construccion y Despliegue", "isCorrect": true },
-      { "id": "q7_o3", "text": "No, se divide en Diseño y la parte de contrucción que ya contempla el despliegue obviamente", "isCorrect": false }
+      {
+        "id": "q7_o1",
+        "text": "Si es cierto se divide en Diseño, Publicación y Despliegue",
+        "isCorrect": false
+      },
+      {
+        "id": "q7_o2",
+        "text": "Si es cierto Diseño, Construccion y Despliegue",
+        "isCorrect": true
+      },
+      {
+        "id": "q7_o3",
+        "text": "No, se divide en Diseño y la parte de contrucción que ya contempla el despliegue obviamente",
+        "isCorrect": false
+      }
     ],
     "hint": "Enumera las fases principales del ciclo de vida de un desarrollo de software estándar.",
     "explanation": "El flujo ASO 2.0 organiza el ciclo de vida en tres etapas principales gestionadas por tickets: Diseño, Construcción y finalmente Despliegue."
@@ -91,9 +179,21 @@ export const initialBank: Question[] = [
     "questionText": "Es cierto que la creación de metadata esta contemplada en el ticket de ASO 2.0 Diseño?.",
     "type": "single",
     "options": [
-      { "id": "q8_o1", "text": "Si es cierto ya que al momento de crear un endpoint nuevo y publicarlo se crean los SN y SMC", "isCorrect": false },
-      { "id": "q8_o2", "text": "Si es cierto ya que se puede solicitar inmediatamente en otro status del ticket de diseño", "isCorrect": false },
-      { "id": "q8_o3", "text": "No. la solicitud de metadata no esta contemplada en la fase de diseño", "isCorrect": true }
+      {
+        "id": "q8_o1",
+        "text": "Si es cierto ya que al momento de crear un endpoint nuevo y publicarlo se crean los SN y SMC",
+        "isCorrect": false
+      },
+      {
+        "id": "q8_o2",
+        "text": "Si es cierto ya que se puede solicitar inmediatamente en otro status del ticket de diseño",
+        "isCorrect": false
+      },
+      {
+        "id": "q8_o3",
+        "text": "No. la solicitud de metadata no esta contemplada en la fase de diseño",
+        "isCorrect": true
+      }
     ],
     "hint": "¿En qué momento del flujo se gestionan los SN (Service Name) y SMC (Service Management Code)?",
     "explanation": "La metadata se gestiona fuera de la fase de diseño, generalmente después de que el diseño está consolidado para proceder con la construcción y registro."
@@ -103,11 +203,31 @@ export const initialBank: Question[] = [
     "questionText": "¿En que estado del ticket de diseño el developer es el encargado de publicar endpoint que ha creado?",
     "type": "single",
     "options": [
-      { "id": "q9_o1", "text": "Deployed", "isCorrect": false },
-      { "id": "q9_o2", "text": "In progress", "isCorrect": false },
-      { "id": "q9_o3", "text": "Ready to verify", "isCorrect": true },
-      { "id": "q9_o4", "text": "Ready", "isCorrect": false },
-      { "id": "q9_o5", "text": "Analyzing", "isCorrect": false }
+      {
+        "id": "q9_o1",
+        "text": "Deployed",
+        "isCorrect": false
+      },
+      {
+        "id": "q9_o2",
+        "text": "In progress",
+        "isCorrect": false
+      },
+      {
+        "id": "q9_o3",
+        "text": "Ready to verify",
+        "isCorrect": true
+      },
+      {
+        "id": "q9_o4",
+        "text": "Ready",
+        "isCorrect": false
+      },
+      {
+        "id": "q9_o5",
+        "text": "Analyzing",
+        "isCorrect": false
+      }
     ],
     "hint": "Busca el estado que indica que el trabajo está listo para que un revisor lo valide.",
     "explanation": "Cuando el ticket está en estado 'Ready to verify', el desarrollador ya ha completado su propuesta y la ha publicado para revisión del Solution Architect."
@@ -117,8 +237,16 @@ export const initialBank: Question[] = [
     "questionText": "¿Existe un endpoint de diseño global que cumple con mi funcionalidad pero hay campos que no puedo contemplar ¿debo implementar una versión local de ese mismo endpoint?",
     "type": "single",
     "options": [
-      { "id": "q10_o1", "text": "No", "isCorrect": true },
-      { "id": "q10_o2", "text": "Si", "isCorrect": false }
+      {
+        "id": "q10_o1",
+        "text": "No",
+        "isCorrect": true
+      },
+      {
+        "id": "q10_o2",
+        "text": "Si",
+        "isCorrect": false
+      }
     ],
     "hint": "Considera la reutilización y el principio de no duplicidad en APIs globales.",
     "explanation": "Se debe reutilizar el endpoint global siempre que sea posible. Los campos no utilizados pueden ignorarse en lugar de crear una versión local redundante."
@@ -128,8 +256,16 @@ export const initialBank: Question[] = [
     "questionText": "He detectado que algunos ejemplos están mal y pueden confundir los valores. Al corregirlos se versiona a minor . ¿Eso es normal?",
     "type": "single",
     "options": [
-      { "id": "q11_o1", "text": "No. Ajustar un ejemplo no afecta al consumidor y es considerado como un ajuste de documentación. Es un cambio patch", "isCorrect": true },
-      { "id": "q11_o2", "text": "Si, ya que el cambiar ejemplos contempla la modificacion de un archivo por lo que minor es un cambio retrocompatible", "isCorrect": false }
+      {
+        "id": "q11_o1",
+        "text": "No. Ajustar un ejemplo no afecta al consumidor y es considerado como un ajuste de documentación. Es un cambio patch",
+        "isCorrect": true
+      },
+      {
+        "id": "q11_o2",
+        "text": "Si, ya que el cambiar ejemplos contempla la modificacion de un archivo por lo que minor es un cambio retrocompatible",
+        "isCorrect": false
+      }
     ],
     "hint": "Diferencia entre cambios que rompen el contrato, cambios que añaden funcionalidad y cambios estéticos o de documentación.",
     "explanation": "Los cambios en ejemplos o descripciones que no modifican la lógica ni añaden campos son considerados documentación y corresponden a una versión 'Patch'."
@@ -139,8 +275,16 @@ export const initialBank: Question[] = [
     "questionText": "Se tiene una funcionalidad que se relaciona con un tercero; un ente regulador que solo existe en su país. Va a crear un servicio con scope Globa-Global-Local (Global Multilocal), ¿Se esta haciendo lo correcto?",
     "type": "single",
     "options": [
-      { "id": "q12_o1", "text": "Si", "isCorrect": false },
-      { "id": "q12_o2", "text": "No", "isCorrect": true }
+      {
+        "id": "q12_o1",
+        "text": "Si",
+        "isCorrect": false
+      },
+      {
+        "id": "q12_o2",
+        "text": "No",
+        "isCorrect": true
+      }
     ],
     "hint": "¿Qué significa que algo sea Global si solo aplica a una regulación de un único país?",
     "explanation": "Si la funcionalidad es específica de un ente regulador de un solo país, el scope debería ser Local, ya que no tiene sentido ni reutilización para otros países."
@@ -150,10 +294,26 @@ export const initialBank: Question[] = [
     "questionText": "¿Qué métodos permite el uso de paginación?",
     "type": "single",
     "options": [
-      { "id": "q13_o1", "text": "GET Y POST CONTROLLER", "isCorrect": true },
-      { "id": "q13_o2", "text": "POST CONTROLLER", "isCorrect": false },
-      { "id": "q13_o3", "text": "GET", "isCorrect": false },
-      { "id": "q13_o4", "text": "POST", "isCorrect": false }
+      {
+        "id": "q13_o1",
+        "text": "GET Y POST CONTROLLER",
+        "isCorrect": true
+      },
+      {
+        "id": "q13_o2",
+        "text": "POST CONTROLLER",
+        "isCorrect": false
+      },
+      {
+        "id": "q13_o3",
+        "text": "GET",
+        "isCorrect": false
+      },
+      {
+        "id": "q13_o4",
+        "text": "POST",
+        "isCorrect": false
+      }
     ],
     "hint": "La paginación se usa tanto en consultas directas como en búsquedas complejas mediante controladores.",
     "explanation": "La paginación es aplicable en el método GET (listas de recursos) y en el patrón POST Controller (cuando se realizan búsquedas complejas con cuerpo de mensaje)."
@@ -163,10 +323,26 @@ export const initialBank: Question[] = [
     "questionText": "Seleccione Standard request headers validos",
     "type": "multiple",
     "options": [
-      { "id": "q14_o1", "text": "Content-type", "isCorrect": true },
-      { "id": "q14_o2", "text": "Authorization", "isCorrect": true },
-      { "id": "q14_o3", "text": "User-Agent", "isCorrect": true },
-      { "id": "q14_o4", "text": "Preferential", "isCorrect": false }
+      {
+        "id": "q14_o1",
+        "text": "Content-type",
+        "isCorrect": true
+      },
+      {
+        "id": "q14_o2",
+        "text": "Authorization",
+        "isCorrect": true
+      },
+      {
+        "id": "q14_o3",
+        "text": "User-Agent",
+        "isCorrect": true
+      },
+      {
+        "id": "q14_o4",
+        "text": "Preferential",
+        "isCorrect": false
+      }
     ],
     "hint": "Busca cabeceras estándar de HTTP definidas en las RFCs habituales.",
     "explanation": "Content-type, Authorization y User-Agent son cabeceras estándar definidas por el protocolo HTTP para negociación de contenido, seguridad e identificación de cliente."
@@ -176,8 +352,16 @@ export const initialBank: Question[] = [
     "questionText": "Mi Líder de negocio quiere hacer un endpoint, pero ne he dado cuenta de que la funcionalidad en realidad son dos endpoint. Por lo que he preparado un diseño para contemplar ambas en un endpoint ¿Es correcto esta acción?",
     "type": "single",
     "options": [
-      { "id": "q15_o1", "text": "Si, ya que puedo englobar más de una funcionalidad en un solo endpoint", "isCorrect": false },
-      { "id": "q15_o2", "text": "No", "isCorrect": true }
+      {
+        "id": "q15_o1",
+        "text": "Si, ya que puedo englobar más de una funcionalidad en un solo endpoint",
+        "isCorrect": false
+      },
+      {
+        "id": "q15_o2",
+        "text": "No",
+        "isCorrect": true
+      }
     ],
     "hint": "Piensa en el principio de responsabilidad única en el diseño de APIs.",
     "explanation": "Cada endpoint debe cumplir un propósito único y claro. Unir funcionalidades distintas en uno solo dificulta el mantenimiento, la seguridad y el consumo."
@@ -187,8 +371,16 @@ export const initialBank: Question[] = [
     "questionText": "El diseñador recibio de negocio un listado de campos de los cuales no está seguro que significan. y en su diseño de API colocó los nombres y descripciones de forma ambigua. ¿Se está diseñando bien?",
     "type": "single",
     "options": [
-      { "id": "q16_o1", "text": "El diseñador necesita más logica y profesionalidad en sus diseños. ya que nadie más podrá entender que hace ese endpoint o reutilizarlo", "isCorrect": true },
-      { "id": "q16_o2", "text": "No, pero puede seguir adelante porque corre prisa", "isCorrect": false }
+      {
+        "id": "q16_o1",
+        "text": "El diseñador necesita más logica y profesionalidad en sus diseños. ya que nadie más podrá entender que hace ese endpoint o reutilizarlo",
+        "isCorrect": true
+      },
+      {
+        "id": "q16_o2",
+        "text": "No, pero puede seguir adelante porque corre prisa",
+        "isCorrect": false
+      }
     ],
     "hint": "¿Es útil un contrato de API si no se entiende la semántica de sus campos?",
     "explanation": "Un buen diseño requiere semántica clara. Los nombres y descripciones ambiguos rompen la utilidad del contrato de la API para los consumidores."
@@ -198,9 +390,21 @@ export const initialBank: Question[] = [
     "questionText": "Un compañero acaba de entrar al equipo y esta diseñando un endpoint PATCH que no tiene un body de respuesta y ha colocado un código HTTP 200. ¿Es el mejor código?",
     "type": "single",
     "options": [
-      { "id": "q17_o1", "text": "No, ya que el código 204 expresa que fue exitoso y que no hay contenido para regresar en la peticion", "isCorrect": true },
-      { "id": "q17_o2", "text": "si ya que el 200 ok permite no regresar un body de respuesta", "isCorrect": false },
-      { "id": "q17_o3", "text": "si ya que el código no tiene nada que ver con la forma de respuesta", "isCorrect": false }
+      {
+        "id": "q17_o1",
+        "text": "No, ya que el código 204 expresa que fue exitoso y que no hay contenido para regresar en la peticion",
+        "isCorrect": true
+      },
+      {
+        "id": "q17_o2",
+        "text": "si ya que el 200 ok permite no regresar un body de respuesta",
+        "isCorrect": false
+      },
+      {
+        "id": "q17_o3",
+        "text": "si ya que el código no tiene nada que ver con la forma de respuesta",
+        "isCorrect": false
+      }
     ],
     "hint": "Busca el código de estado HTTP específico para 'Éxito sin contenido'.",
     "explanation": "El código 204 (No Content) es el estándar semántico más adecuado para operaciones exitosas que no devuelven representación del recurso en el cuerpo."
@@ -210,10 +414,26 @@ export const initialBank: Question[] = [
     "questionText": "Seleccione los métodos que son idempotentes (elige 3)",
     "type": "multiple",
     "options": [
-      { "id": "q18_o1", "text": "PUT", "isCorrect": true },
-      { "id": "q18_o2", "text": "GET", "isCorrect": true },
-      { "id": "q18_o3", "text": "POST", "isCorrect": false },
-      { "id": "q18_o4", "text": "DELETE", "isCorrect": true }
+      {
+        "id": "q18_o1",
+        "text": "PUT",
+        "isCorrect": true
+      },
+      {
+        "id": "q18_o2",
+        "text": "GET",
+        "isCorrect": true
+      },
+      {
+        "id": "q18_o3",
+        "text": "POST",
+        "isCorrect": false
+      },
+      {
+        "id": "q18_o4",
+        "text": "DELETE",
+        "isCorrect": true
+      }
     ],
     "hint": "La idempotencia significa que múltiples peticiones idénticas deben tener el mismo efecto que una sola.",
     "explanation": "GET es seguro/idempotente. PUT reemplaza recursos e idempotente por definición. DELETE elimina un recurso (la primera vez lo borra, las siguientes el resultado final es el mismo: el recurso no está)."
@@ -223,9 +443,21 @@ export const initialBank: Question[] = [
     "questionText": "es cierto el PUT solo reemplaza o actualiza el recurso por lo que no puedo crear con el método PUT",
     "type": "single",
     "options": [
-      { "id": "q19_o1", "text": "Es cierto el PUT no puede tener un 201 ya que este código sólo es admitido en un método POST", "isCorrect": false },
-      { "id": "q19_o2", "text": "El patrón correcto es un Controller", "isCorrect": false },
-      { "id": "q19_o3", "text": "No tiene razón. El método PUT admite 201 también ya que sino encuentra el recurso puede crearlo, esto se usa cuando el consumidor conoce el identificador de antemano", "isCorrect": true }
+      {
+        "id": "q19_o1",
+        "text": "Es cierto el PUT no puede tener un 201 ya que este código sólo es admitido en un método POST",
+        "isCorrect": false
+      },
+      {
+        "id": "q19_o2",
+        "text": "El patrón correcto es un Controller",
+        "isCorrect": false
+      },
+      {
+        "id": "q19_o3",
+        "text": "No tiene razón. El método PUT admite 201 también ya que sino encuentra el recurso puede crearlo, esto se usa cuando el consumidor conoce el identificador de antemano",
+        "isCorrect": true
+      }
     ],
     "hint": "Investiga el comportamiento 'Upsert' de HTTP PUT.",
     "explanation": "El estándar HTTP permite que PUT cree un recurso (201 Created) si el ID es conocido por el cliente y el recurso no existe previamente."
@@ -235,9 +467,21 @@ export const initialBank: Question[] = [
     "questionText": "estoy diseñando un PUT pero he colocado un codigo 201 para indicar que puede crear recursos sino los encuentra para modificarlos. Pero un compañero me ha dicho que eso no es posible. ¿Tengo que cambiarlo?",
     "type": "single",
     "options": [
-      { "id": "q20_o1", "text": "No tiene razón. El método PUT admite 201 también ya que sino encuentra el recurso puede crearlo, esto se usa cuando el consumidor conoce el identificador de antemano", "isCorrect": true },
-      { "id": "q20_o2", "text": "Es cierto el PUT sólo reemplaza o actualiza el recurso por lo que no puede crear con el método PUT", "isCorrect": false },
-      { "id": "q20_o3", "text": "Es cierto el PUT no puede tener un 201 ya que este código sólo es admitido en un método POST", "isCorrect": false }
+      {
+        "id": "q20_o1",
+        "text": "No tiene razón. El método PUT admite 201 también ya que sino encuentra el recurso puede crearlo, esto se usa cuando el consumidor conoce el identificador de antemano",
+        "isCorrect": true
+      },
+      {
+        "id": "q20_o2",
+        "text": "Es cierto el PUT sólo reemplaza o actualiza el recurso por lo que no puede crear con el método PUT",
+        "isCorrect": false
+      },
+      {
+        "id": "q20_o3",
+        "text": "Es cierto el PUT no puede tener un 201 ya que este código sólo es admitido en un método POST",
+        "isCorrect": false
+      }
     ],
     "hint": "Revisa si el método PUT soporta la creación de recursos.",
     "explanation": "No es necesario cambiarlo; PUT soporta semánticamente el estado 201 Created si la operación resultó en la creación de un nuevo recurso."
@@ -247,10 +491,26 @@ export const initialBank: Question[] = [
     "questionText": "Seleccione las herramientas utilizadas para el diseño de APIS(Elige 3)",
     "type": "multiple",
     "options": [
-      { "id": "q21_o1", "text": "Intellij Idea", "isCorrect": false },
-      { "id": "q21_o2", "text": "Metainformation Tool", "isCorrect": true },
-      { "id": "q21_o3", "text": "Jira", "isCorrect": true },
-      { "id": "q21_o4", "text": "APIDT", "isCorrect": true }
+      {
+        "id": "q21_o1",
+        "text": "Intellij Idea",
+        "isCorrect": false
+      },
+      {
+        "id": "q21_o2",
+        "text": "Metainformation Tool",
+        "isCorrect": true
+      },
+      {
+        "id": "q21_o3",
+        "text": "Jira",
+        "isCorrect": true
+      },
+      {
+        "id": "q21_o4",
+        "text": "APIDT",
+        "isCorrect": true
+      }
     ],
     "hint": "Considera las herramientas de flujo de trabajo y las específicas de definición de APIs.",
     "explanation": "El flujo de ASO utiliza Jira para seguimiento, APIDT para el diseño técnico y Metainformation para el registro de metadatos asociados."
@@ -260,9 +520,21 @@ export const initialBank: Question[] = [
     "questionText": "Mi compañero abrio una solicitud en el APIDT, pero no ha creado su DFT, no puede iniciar la solicitud.¿Es verdadera esta sentencia?",
     "type": "single",
     "options": [
-      { "id": "q22_o1", "text": "No, ya que la herramienta del APIDT no necesita DFT para funcionar y ahi mismo se pueden modificar los campos directamente", "isCorrect": true },
-      { "id": "q22_o2", "text": "Si, ya sino como se va a revisar el diseño", "isCorrect": false },
-      { "id": "q22_o3", "text": "Si, ya que el DFT contiene la propuesta de diseño", "isCorrect": false }
+      {
+        "id": "q22_o1",
+        "text": "No, ya que la herramienta del APIDT no necesita DFT para funcionar y ahi mismo se pueden modificar los campos directamente",
+        "isCorrect": true
+      },
+      {
+        "id": "q22_o2",
+        "text": "Si, ya sino como se va a revisar el diseño",
+        "isCorrect": false
+      },
+      {
+        "id": "q22_o3",
+        "text": "Si, ya que el DFT contiene la propuesta de diseño",
+        "isCorrect": false
+      }
     ],
     "hint": "¿Es obligatorio un documento externo para cargar información en el portal de APIDT?",
     "explanation": "Aunque el DFT es útil para planificar, la herramienta APIDT permite la entrada directa de datos y no requiere obligatoriamente un documento previo cargado."
@@ -272,8 +544,16 @@ export const initialBank: Question[] = [
     "questionText": "El patrón simulation permite conocer el resultado potencial de una operación, sin realizarla realmente",
     "type": "single",
     "options": [
-      { "id": "q23_o1", "text": "true", "isCorrect": true },
-      { "id": "q23_o2", "text": "false", "isCorrect": false }
+      {
+        "id": "q23_o1",
+        "text": "true",
+        "isCorrect": true
+      },
+      {
+        "id": "q23_o2",
+        "text": "false",
+        "isCorrect": false
+      }
     ],
     "hint": "Piensa en el propósito de un 'dry-run'.",
     "explanation": "El patrón de diseño 'Simulation' se utiliza precisamente para validar qué sucedería (como comisiones o aprobaciones) sin persistir los cambios."
@@ -283,9 +563,21 @@ export const initialBank: Question[] = [
     "questionText": "Negocio me ha pedido crear varios registros, no se puede enviar uno por uno ya que son un grupo grande de alrededor de 100-200 registros creado durante el dia",
     "type": "single",
     "options": [
-      { "id": "q24_o1", "text": "Lo mejor es hacerlo en un bulk para poder enviar varios registros mismo tiempo", "isCorrect": true },
-      { "id": "q24_o2", "text": "Lo mejor es crearlo con un patrón asíncrono asi se pueden crear paralelamente", "isCorrect": false },
-      { "id": "q24_o3", "text": "Se puede crear un controller", "isCorrect": false }
+      {
+        "id": "q24_o1",
+        "text": "Lo mejor es hacerlo en un bulk para poder enviar varios registros mismo tiempo",
+        "isCorrect": true
+      },
+      {
+        "id": "q24_o2",
+        "text": "Lo mejor es crearlo con un patrón asíncrono asi se pueden crear paralelamente",
+        "isCorrect": false
+      },
+      {
+        "id": "q24_o3",
+        "text": "Se puede crear un controller",
+        "isCorrect": false
+      }
     ],
     "hint": "¿Qué patrón de diseño REST se especializa en el procesamiento por lotes?",
     "explanation": "El patrón Bulk está diseñado para manejar múltiples recursos en una sola petición, optimizando el tráfico y el procesamiento de grandes volúmenes de datos."
@@ -295,10 +587,26 @@ export const initialBank: Question[] = [
     "questionText": "Negocio necesita una funcionalidad para poder simular una cotización de crédito hipotecario. Dicha simulación es temporal y no es necesario consultarla después ya que solo es una aproximación. ¿Qué patrón de diseño se ajusta más?",
     "type": "single",
     "options": [
-      { "id": "q25_o1", "text": "Un Get de detalle de seguro hipotecario", "isCorrect": false },
-      { "id": "q25_o2", "text": "un POST con patron controller search", "isCorrect": false },
-      { "id": "q25_o3", "text": "Un POST con patron Controller", "isCorrect": true },
-      { "id": "q25_o4", "text": "Un POST de creación de cotización de seguro hipotecario", "isCorrect": false }
+      {
+        "id": "q25_o1",
+        "text": "Un Get de detalle de seguro hipotecario",
+        "isCorrect": false
+      },
+      {
+        "id": "q25_o2",
+        "text": "un POST con patron controller search",
+        "isCorrect": false
+      },
+      {
+        "id": "q25_o3",
+        "text": "Un POST con patron Controller",
+        "isCorrect": true
+      },
+      {
+        "id": "q25_o4",
+        "text": "Un POST de creación de cotización de seguro hipotecario",
+        "isCorrect": false
+      }
     ],
     "hint": "Se trata de un proceso o cálculo que no crea un recurso persistente.",
     "explanation": "Al ser un cálculo complejo (cotización) que no persiste un recurso, el patrón Controller es el más adecuado para representar esta acción."
@@ -308,10 +616,26 @@ export const initialBank: Question[] = [
     "questionText": "Son dos consideraciones importantes cuando se va a definir la URI al momento de usar el patron 'Controller'(elige 2)",
     "type": "multiple",
     "options": [
-      { "id": "q26_o1", "text": "Los controllers deben ser el ultimo recurso en el URI Path", "isCorrect": true },
-      { "id": "q26_o2", "text": "Los Controllers solo se usan con método POST", "isCorrect": true },
-      { "id": "q26_o3", "text": "Deben recibir la llave del recurso como URI param", "isCorrect": false },
-      { "id": "q26_o4", "text": "Su función principal es ejecutar una misma operación sobre recursos similares", "isCorrect": false }
+      {
+        "id": "q26_o1",
+        "text": "Los controllers deben ser el ultimo recurso en el URI Path",
+        "isCorrect": true
+      },
+      {
+        "id": "q26_o2",
+        "text": "Los Controllers solo se usan con método POST",
+        "isCorrect": true
+      },
+      {
+        "id": "q26_o3",
+        "text": "Deben recibir la llave del recurso como URI param",
+        "isCorrect": false
+      },
+      {
+        "id": "q26_o4",
+        "text": "Su función principal es ejecutar una misma operación sobre recursos similares",
+        "isCorrect": false
+      }
     ],
     "hint": "Los controladores son verbos al final de la ruta y requieren un cuerpo de mensaje.",
     "explanation": "Según los estándares de diseño, los controladores se invocan mediante POST y el verbo que describe la acción debe ser el segmento final de la URI."
@@ -321,9 +645,21 @@ export const initialBank: Question[] = [
     "questionText": "Un compañero nos comenta que necesita borrar varios recursos al mismo tiempo y que el metodo DELETE no admite query parameters. ¿Qué opciones tiene?",
     "type": "single",
     "options": [
-      { "id": "q27_o1", "text": "Utilizar un controller para poder borrarlos ya que no se adminiten Query parameters en el DELETE puede enviarlos en el body del POST", "isCorrect": false },
-      { "id": "q27_o2", "text": "Utilizar un bulk. Puede enviar un body request en el DELETE y ahi enviar un array con los registros a borrar", "isCorrect": false },
-      { "id": "q27_o3", "text": "Esta equivocado. El método DELETE si admite query parameters y puede declarar un id para poder enviar varios Query parameters y borrar esos registros", "isCorrect": true }
+      {
+        "id": "q27_o1",
+        "text": "Utilizar un controller para poder borrarlos ya que no se adminiten Query parameters en el DELETE puede enviarlos en el body del POST",
+        "isCorrect": false
+      },
+      {
+        "id": "q27_o2",
+        "text": "Utilizar un bulk. Puede enviar un body request en el DELETE y ahi enviar un array con los registros a borrar",
+        "isCorrect": false
+      },
+      {
+        "id": "q27_o3",
+        "text": "Esta equivocado. El método DELETE si admite query parameters y puede declarar un id para poder enviar varios Query parameters y borrar esos registros",
+        "isCorrect": true
+      }
     ],
     "hint": "Revisa si el protocolo HTTP prohíbe el uso de query strings en DELETE.",
     "explanation": "DELETE admite query parameters. Para borrar múltiples recursos, se pueden pasar múltiples IDs o filtros en la query string siguiendo los estándares."
@@ -333,10 +669,26 @@ export const initialBank: Question[] = [
     "questionText": "Necesito crear un endpoint que analice el nivel de riesgo de un cliente en la contratacion de un credito. Dicho nivel sera de respuesta y solo se consulta una vez el resultado",
     "type": "single",
     "options": [
-      { "id": "id28_o1", "text": "El patrón es uno Asincrono", "isCorrect": false },
-      { "id": "id28_o2", "text": "El patrón es un Controller Serach", "isCorrect": false },
-      { "id": "id28_o3", "text": "El patrón correcto es un Bulk", "isCorrect": false },
-      { "id": "id28_o4", "text": "El patrón correcto es un Controller", "isCorrect": true }
+      {
+        "id": "id28_o1",
+        "text": "El patrón es uno Asincrono",
+        "isCorrect": false
+      },
+      {
+        "id": "id28_o2",
+        "text": "El patrón es un Controller Serach",
+        "isCorrect": false
+      },
+      {
+        "id": "id28_o3",
+        "text": "El patrón correcto es un Bulk",
+        "isCorrect": false
+      },
+      {
+        "id": "id28_o4",
+        "text": "El patrón correcto es un Controller",
+        "isCorrect": true
+      }
     ],
     "hint": "Se trata de una operación de procesamiento lógico más que de una gestión de recursos CRUD.",
     "explanation": "Un análisis es una acción procesual. El patrón Controller es el indicado para exponer operaciones de negocio que calculan o analizan datos."
@@ -346,10 +698,26 @@ export const initialBank: Question[] = [
     "questionText": "Define para que sirve una URI param (path param)",
     "type": "single",
     "options": [
-      { "id": "q29_o1", "text": "Para aplicar filtros a las consultas que estamos haciendo", "isCorrect": false },
-      { "id": "q29_o2", "text": "Para obtener mas de un recurso", "isCorrect": false },
-      { "id": "q29_o3", "text": "Para hacer uso de expands y fields", "isCorrect": false },
-      { "id": "q29_o4", "text": "Para enviar el identificador de un recurso sobre el cual queremos realizar una operacion en concreto", "isCorrect": true }
+      {
+        "id": "q29_o1",
+        "text": "Para aplicar filtros a las consultas que estamos haciendo",
+        "isCorrect": false
+      },
+      {
+        "id": "q29_o2",
+        "text": "Para obtener mas de un recurso",
+        "isCorrect": false
+      },
+      {
+        "id": "q29_o3",
+        "text": "Para hacer uso de expands y fields",
+        "isCorrect": false
+      },
+      {
+        "id": "q29_o4",
+        "text": "Para enviar el identificador de un recurso sobre el cual queremos realizar una operacion en concreto",
+        "isCorrect": true
+      }
     ],
     "hint": "Considera la diferencia entre /recursos?id=1 y /recursos/1.",
     "explanation": "Los Path Parameters se utilizan para identificar de manera unívoca un recurso específico dentro de la jerarquía de la API."
@@ -359,9 +727,21 @@ export const initialBank: Question[] = [
     "questionText": "Estoy diseñando un endpoint como este GET /customers?personalIdentification=ABCD12345GHL ¿Es correcto?",
     "type": "single",
     "options": [
-      { "id": "q30_o1", "text": "No, ya que el query param es un campo de data sensible. Estos campos no deben viajar por la URI ya que pueden quedarse en dispositivos de redes y ademas permiten que un tercero pueda interceptar y capturar data personal", "isCorrect": true },
-      { "id": "q30_o2", "text": "SI, ya que el nombre esta en plural, es un sustantivo y el query param esta acorde a los estandares", "isCorrect": false },
-      { "id": "q30_o3", "text": "No, ya que no esta entre comillas el query param", "isCorrect": false }
+      {
+        "id": "q30_o1",
+        "text": "No, ya que el query param es un campo de data sensible. Estos campos no deben viajar por la URI ya que pueden quedarse en dispositivos de redes y ademas permiten que un tercero pueda interceptar y capturar data personal",
+        "isCorrect": true
+      },
+      {
+        "id": "q30_o2",
+        "text": "SI, ya que el nombre esta en plural, es un sustantivo y el query param esta acorde a los estandares",
+        "isCorrect": false
+      },
+      {
+        "id": "q30_o3",
+        "text": "No, ya que no esta entre comillas el query param",
+        "isCorrect": false
+      }
     ],
     "hint": "¿Qué sucede con los parámetros de la URL en los logs de los servidores o en el historial del navegador?",
     "explanation": "La información sensible (PII) nunca debe enviarse en la URI (Query o Path Params) porque estas suelen quedar registradas en logs de texto plano por motivos de seguridad."
@@ -371,10 +751,26 @@ export const initialBank: Question[] = [
     "questionText": "Se requiere diseñar un servicio que permite al cliente agregar productos (products) al carrito de compras (cart) ¿Cuál de las siguientes opciones es la más correcta para el fin?",
     "type": "single",
     "options": [
-      { "id": "q31_o1", "text": "PUT http://my-domain.com/carts/{cart-id}/products", "isCorrect": false },
-      { "id": "q31_o2", "text": "POST http://my-domain.com/carts/{cart-id}/products", "isCorrect": true },
-      { "id": "q31_o3", "text": "GET http://my-domain.com/carts/products", "isCorrect": false },
-      { "id": "q31_o4", "text": "GET http://my-domain.com/carts/{card-id}/products", "isCorrect": false }
+      {
+        "id": "q31_o1",
+        "text": "PUT http://my-domain.com/carts/{cart-id}/products",
+        "isCorrect": false
+      },
+      {
+        "id": "q31_o2",
+        "text": "POST http://my-domain.com/carts/{cart-id}/products",
+        "isCorrect": true
+      },
+      {
+        "id": "q31_o3",
+        "text": "GET http://my-domain.com/carts/products",
+        "isCorrect": false
+      },
+      {
+        "id": "q31_o4",
+        "text": "GET http://my-domain.com/carts/{card-id}/products",
+        "isCorrect": false
+      }
     ],
     "hint": "Agregar un elemento a una colección existente suele requerir la creación de una relación o sub-recurso.",
     "explanation": "El método POST se utiliza para crear sub-recursos dentro de una colección identificada. En este caso, productos dentro de un carrito específico."
@@ -384,45 +780,93 @@ export const initialBank: Question[] = [
     "questionText": "Se requiere diseñar un servicio que recupere la lista de chequeras (checkbooks) asociadas a una cuenta (accounts) ¿Cual de las siguientes opciones es la mas correcta para tal fin?",
     "type": "single",
     "options": [
-      { "id": "q32_o1", "text": "PUT http://my-domain.com/accounts/v0/accounts/{account-id}/checkbooks/{checkbook-id}", "isCorrect": false },
-      { "id": "q32_o2", "text": "GET http://my-domain.com/accounts/v0/accounts/{account-id}/checkbooks/{checkbook-id}", "isCorrect": false },
-      { "id": "q32_o3", "text": "POST http://my-domain.com/accounts/v0/accounts/{account-id}/checkbooks", "isCorrect": false },
-      { "id": "q32_o4", "text": "GET http://my-domain.com/accounts/v0/accounts/{account-id}/checkbooks", "isCorrect": true }
+      {
+        "id": "q32_o1",
+        "text": "PUT http://my-domain.com/accounts/v0/accounts/{account-id}/checkbooks/{checkbook-id}",
+        "isCorrect": false
+      },
+      {
+        "id": "q32_o2",
+        "text": "GET http://my-domain.com/accounts/v0/accounts/{account-id}/checkbooks/{checkbook-id}",
+        "isCorrect": false
+      },
+      {
+        "id": "q32_o3",
+        "text": "POST http://my-domain.com/accounts/v0/accounts/{account-id}/checkbooks",
+        "isCorrect": false
+      },
+      {
+        "id": "q32_o4",
+        "text": "GET http://my-domain.com/accounts/v0/accounts/{account-id}/checkbooks",
+        "isCorrect": true
+      }
     ],
     "hint": "Se solicita recuperar una lista, no un elemento individual.",
     "explanation": "Para obtener una lista de sub-recursos asociados a un recurso padre, se utiliza GET sobre la colección del sub-recurso sin especificar un ID final."
   },
   {
     "id": "q33",
-    "questionText": "Las siguientes URIs permiten obtener el mismo resultado, ¿Es correcto? GET /cards/123/transactions GET /transactions?cardId=123",
+    "questionText": "Las siguientes URIs permiten obtener el mismo resultado, ¿Es correcto?GET /cards/123/transactionsGET   /transactions?cardId=123",
     "type": "single",
     "options": [
-      { "id": "q33_o1", "text": "true", "isCorrect": true },
-      { "id": "q33_o2", "text": "false", "isCorrect": false }
+      {
+        "id": "q33_o1",
+        "text": "true",
+        "isCorrect": true
+      },
+      {
+        "id": "q33_o2",
+        "text": "false",
+        "isCorrect": false
+      }
     ],
     "hint": "Analiza si ambas rutas apuntan lógicamente al mismo conjunto de datos (transacciones de la tarjeta 123).",
     "explanation": "Ambas formas son válidas: una utiliza la jerarquía de recursos y la otra utiliza filtrado sobre una colección global para obtener el mismo resultado."
   },
   {
     "id": "q34",
-    "questionText": "Un compañero me ha pedido reemplazar mi URI GET /accounts/{account-id}/calculate-balances por GET /accounts/{account-id}/balances. Me ha dicho que al ser un recurso consultable no es necesario la palabra calculate pues no es un controller ¿Es correcto?",
+    "questionText": "Un compañero me ha pedido reemplazar mi URI GET   /accounts/{account-id}/calculate-balances por GET    /accounts/{account-id}/balances. Me ha dicho que al ser un recurso consultable no es necesario la palabra calculate pues no es un controller ¿Es correcto?",
     "type": "single",
     "options": [
-      { "id": "q34_o1", "text": "No es correcto", "isCorrect": false },
-      { "id": "q34_o2", "text": "Es correcto, pero el patron controlador admite GET tambien por lo que puedo dejarlo así y ahorrarme tiempo", "isCorrect": false },
-      { "id": "q34_o3", "text": "Es correcto", "isCorrect": true }
+      {
+        "id": "q34_o1",
+        "text": "No es correcto",
+        "isCorrect": false
+      },
+      {
+        "id": "q34_o2",
+        "text": "Es correcto, pero el patron controlador admite GET tambien por lo que puedo dejarlo así y ahorrarme tiempo",
+        "isCorrect": false
+      },
+      {
+        "id": "q34_o3",
+        "text": "Es correcto",
+        "isCorrect": true
+      }
     ],
     "hint": "Las URIs REST deben centrarse en recursos (sustantivos) y no en verbos de acción para métodos GET simples.",
     "explanation": "Correcto. Los balances son recursos que se consultan. Incluir verbos como 'calculate' en la URI rompe el principio de diseño orientado a recursos de REST."
   },
   {
     "id": "q35",
-    "questionText": "¿Cual es el error en la siguiente URI? POST /transfers/{transfer-id}/analysisMovements/",
+    "questionText": "¿Cual es el error en la siguiente URI?   POST  /transfers/{transfer-id}/analysisMovements/",
     "type": "single",
     "options": [
-      { "id": "q35_o1", "text": "Existen dos errores: *El naming es siempre en spin case /analysis-movements. *Tambien el nombre esta mal ya que la traduccion seria 'analisis moviemientos'. Si es recurso debe ser 'movements-analized' si es controller debe ser 'analize-movements'", "isCorrect": false },
-      { "id": "q35_o2", "text": "Existen dos errores: *El naming es siempre en spin case /analysis-movements. *Tambien hay una diagonal al final eso ya significa que es una URL distinta", "isCorrect": false },
-      { "id": "q35_o3", "text": "De hecho, existen tres errores: *El naming es siempre en spin case /analysis-movements. *Tambien el nombre esta mal ya que la traduccion seria 'analisis moviemientos'. Si es recurso debe ser 'movements-analized' si es controller debe ser 'analize-movements' si es controller debe ser 'analize-movements'. *Tambien hay una diagonal al final eso ya significa que es una URL distinta", "isCorrect": true }
+      {
+        "id": "q35_o1",
+        "text": "Existen dos errores: *El naming es siempre en spin case /analysis-movements. *Tambien el nombre esta mal ya que la traduccion seria 'analisis moviemientos'. Si es recurso debe ser 'movements-analized' si es controller debe ser 'analize-movements'",
+        "isCorrect": false
+      },
+      {
+        "id": "q35_o2",
+        "text": "Existen dos errores: *El naming es siempre en spin case /analysis-movements. *Tambien hay una diagonal al final eso ya significa que es una URL distinta",
+        "isCorrect": false
+      },
+      {
+        "id": "q35_o3",
+        "text": "De hecho, existen tres errores: *El naming es siempre en spin case /analysis-movements. *Tambien el nombre esta mal ya que la traduccion seria 'analisis moviemientos'. Si es recurso debe ser 'movements-analized' si es controller debe ser 'analize-movements' si es controller debe ser 'analize-movements'. *Tambien hay una diagonal al final eso ya significa que es una URL distinta",
+        "isCorrect": true
+      }
     ],
     "hint": "Revisa el caso de escritura (camel vs spin), la semántica del nombre y el carácter final de la URI.",
     "explanation": "Se debe usar spin-case (guiones medios), evitar la barra final (trailing slash) y usar una gramática adecuada (verbo para controller, sustantivo para recurso)."
@@ -432,23 +876,55 @@ export const initialBank: Question[] = [
     "questionText": "Que se puede visualizar en las trazas de una peticion ASO",
     "type": "multiple",
     "options": [
-      { "id": "q36_o1", "text": "Logs de las librerias de la arquitectura", "isCorrect": true },
-      { "id": "q36_o2", "text": "logs dejados desde el servicio ASO", "isCorrect": true },
-      { "id": "q36_o3", "text": "logs dejados por los backends(internos y externos) consumidos por el servicio ASO", "isCorrect": false },
-      { "id": "q36_o4", "text": "En work se muestran los logs en nivel debug, info, warning y error", "isCorrect": true }
+      {
+        "id": "q36_o1",
+        "text": "Logs de las librerias de la arquitectura",
+        "isCorrect": true
+      },
+      {
+        "id": "q36_o2",
+        "text": "logs dejados desde el servicio ASO",
+        "isCorrect": true
+      },
+      {
+        "id": "q36_o3",
+        "text": "logs dejados por los backends(internos y externos) consumidos por el servicio ASO",
+        "isCorrect": false
+      },
+      {
+        "id": "q36_o4",
+        "text": "En work se muestran los logs en nivel debug, info, warning y error",
+        "isCorrect": true
+      }
     ],
     "hint": "ASO permite ver lo que ocurre dentro de su propio contenedor de ejecución.",
-    "explanation": "Las trazas muestran la actividad interna de las librías ASO y los mensajes programados por el desarrollador, pero no pueden ver los logs internos de sistemas externos o backends."
+    "explanation": "Las trazas muestran la actividad interna de las librerías ASO y los mensajes programados por el desarrollador, pero no pueden ver los logs internos de sistemas externos o backends."
   },
   {
     "id": "q37",
     "questionText": "¿Que transacción corresponde a la rutina biocatch?",
     "type": "single",
     "options": [
-      { "id": "q37_o1", "text": "PFRCT002", "isCorrect": true },
-      { "id": "q37_o2", "text": "Ninguna", "isCorrect": false },
-      { "id": "q37_o3", "text": "KUSUT009", "isCorrect": false },
-      { "id": "q37_o4", "text": "PECA", "isCorrect": false }
+      {
+        "id": "q37_o1",
+        "text": "PFRCT002",
+        "isCorrect": true
+      },
+      {
+        "id": "q37_o2",
+        "text": "Ninguna",
+        "isCorrect": false
+      },
+      {
+        "id": "q37_o3",
+        "text": "KUSUT009",
+        "isCorrect": false
+      },
+      {
+        "id": "q37_o4",
+        "text": "PECA",
+        "isCorrect": false
+      }
     ],
     "hint": "Identifica el código técnico asociado al servicio de prevención de fraude Biocatch.",
     "explanation": "La transacción PFRCT002 es la encargada de procesar la lógica de telemetría de comportamiento para Biocatch en la arquitectura."
@@ -458,8 +934,16 @@ export const initialBank: Question[] = [
     "questionText": "Cuando se anota o configura un campo con CAS en todos los casos la arquitectura extraera el valor completo del campo para usarse en la verificación que realiza",
     "type": "single",
     "options": [
-      { "id": "q38_o1", "text": "true", "isCorrect": false },
-      { "id": "q38_o2", "text": "false", "isCorrect": true }
+      {
+        "id": "q38_o1",
+        "text": "true",
+        "isCorrect": false
+      },
+      {
+        "id": "q38_o2",
+        "text": "false",
+        "isCorrect": true
+      }
     ],
     "hint": "CAS suele trabajar con máscaras o sub-segmentos según la configuración.",
     "explanation": "Falso. La arquitectura puede configurarse para extraer solo partes específicas o transformar el valor según las reglas del Contexto de Autorización Seguro."
@@ -469,12 +953,28 @@ export const initialBank: Question[] = [
     "questionText": "Un Servicio ASO consumido por dos AAPs (AAP01 y AAP02) requiere cifrar un valor para el AAP01 y no se requiere el valor cifrado para el AAP02. ¿Que formato de propiedad corresponde en el archivo application.properties para el AAP02?",
     "type": "single",
     "options": [
-      { "id": "q39_o1", "text": "crypto.AAP02.{SMC_REGISTRY_ID}.{ALIAS}.active=false", "isCorrect": true },
-      { "id": "q39_o2", "text": "crypto.AAP02.{SMC_REGISTRY_ID}.active=false", "isCorrect": false },
-      { "id": "q39_o3", "text": "crypto.AAP02.{SMC_REGISTRY_ID}.{ALIAS}.active=true", "isCorrect": false },
-      { "id": "q39_o4", "text": "crypto.AAP02.{SMC_REGISTRY_ID}.active=true", "isCorrect": false }
+      {
+        "id": "q39_o1",
+        "text": "crypto.AAP02.{SMC_REGISTRY_ID}.{ALIAS}.active=false",
+        "isCorrect": true
+      },
+      {
+        "id": "q39_o2",
+        "text": "crypto.AAP02.{SMC_REGISTRY_ID}.active=false",
+        "isCorrect": false
+      },
+      {
+        "id": "q39_o3",
+        "text": "crypto.AAP02.{SMC_REGISTRY_ID}.{ALIAS}.active=true",
+        "isCorrect": false
+      },
+      {
+        "id": "q39_o4",
+        "text": "crypto.AAP02.{SMC_REGISTRY_ID}.active=true",
+        "isCorrect": false
+      }
     ],
-    "hint": "La configuración de criptografía en ASO is granular por AAP y por Alias.",
+    "hint": "La configuración de criptografía en ASO es granular por AAP y por Alias.",
     "explanation": "Para desactivar el cifrado específicamente para una aplicación y un campo (alias), se debe usar la ruta completa incluyendo el identificador de la aplicación y el alias."
   },
   {
@@ -482,10 +982,26 @@ export const initialBank: Question[] = [
     "questionText": "Etiqueta dentro de <jaxrs:server/> donde se especifican los nombres de los beans de implementaciones fachada existentes",
     "type": "single",
     "options": [
-      { "id": "q40_o1", "text": "<cxf:bus />", "isCorrect": false },
-      { "id": "q40_o2", "text": "<jaxrs:providers />", "isCorrect": false },
-      { "id": "q40_o3", "text": "<jaxrs:serviceBeans />", "isCorrect": true },
-      { "id": "q40_o4", "text": "<jaxrs:extensionMappings />", "isCorrect": false }
+      {
+        "id": "q40_o1",
+        "text": "<cxf:bus />",
+        "isCorrect": false
+      },
+      {
+        "id": "q40_o2",
+        "text": "<jaxrs:providers />",
+        "isCorrect": false
+      },
+      {
+        "id": "q40_o3",
+        "text": "<jaxrs:serviceBeans />",
+        "isCorrect": true
+      },
+      {
+        "id": "q40_o4",
+        "text": "<jaxrs:extensionMappings />",
+        "isCorrect": false
+      }
     ],
     "hint": "Busca la etiqueta que hace referencia explícita a los 'Beans' de servicio.",
     "explanation": "En la configuración de CXF/Spring, la etiqueta <jaxrs:serviceBeans> se utiliza para listar las clases que implementan los endpoints del servicio REST."
@@ -495,10 +1011,26 @@ export const initialBank: Question[] = [
     "questionText": "Marque la(s) opcion(es) verdadera(s) con respecto a la modalidad de catalogo ASO",
     "type": "multiple",
     "options": [
-      { "id": "q41_o1", "text": "Servicios construidos antes de la existencia del catalogo de APIs", "isCorrect": true },
-      { "id": "q41_o2", "text": "A priori un servicio es clasificado por la arquirtectura como catalogo ASO, si la version del recurso cumple el patron V[0-9]{2}", "isCorrect": true },
-      { "id": "q41_o3", "text": "Proporciona las mismas caracteristicas en la implementacion que el catalogo GABI", "isCorrect": false },
-      { "id": "q41_o4", "text": "Tambien llamado catalogo viejo", "isCorrect": true }
+      {
+        "id": "q41_o1",
+        "text": "Servicios construidos antes de la existencia del catalogo de APIs",
+        "isCorrect": true
+      },
+      {
+        "id": "q41_o2",
+        "text": "A priori un servicio es clasificado por la arquirtectura como catalogo ASO, si la version del recurso cumple el patron V[0-9]{2}",
+        "isCorrect": true
+      },
+      {
+        "id": "q41_o3",
+        "text": "Proporciona las mismas caracteristicas en la implementacion que el catalogo GABI",
+        "isCorrect": false
+      },
+      {
+        "id": "q41_o4",
+        "text": "Tambien llamado catalogo viejo",
+        "isCorrect": true
+      }
     ],
     "hint": "El catálogo ASO se refiere a servicios heredados o previos a las normativas globales actuales.",
     "explanation": "El catálogo ASO comprende servicios 'legacy' o antiguos que siguen un versionado específico (V00, V01) y que no necesariamente cumplen con todos los estándares GABI."
@@ -508,10 +1040,26 @@ export const initialBank: Question[] = [
     "questionText": "¿Que funcionalidades proporciona ASO para el desarrollo de servicios",
     "type": "multiple",
     "options": [
-      { "id": "q42_o1", "text": "Cifrado", "isCorrect": true },
-      { "id": "q42_o2", "text": "Manejador de interceptores de respuesta", "isCorrect": true },
-      { "id": "q42_o3", "text": "conector Rest", "isCorrect": true },
-      { "id": "q42_o4", "text": "gestor de hilos", "isCorrect": false }
+      {
+        "id": "q42_o1",
+        "text": "Cifrado",
+        "isCorrect": true
+      },
+      {
+        "id": "q42_o2",
+        "text": "Manejador de interceptores de respuesta",
+        "isCorrect": true
+      },
+      {
+        "id": "q42_o3",
+        "text": "conector Rest",
+        "isCorrect": true
+      },
+      {
+        "id": "q42_o4",
+        "text": "gestor de hilos",
+        "isCorrect": false
+      }
     ],
     "hint": "ASO es un framework que facilita la integración y seguridad de servicios.",
     "explanation": "ASO ofrece utilidades de seguridad (cifrado), integración (conectores) y extensibilidad (interceptores), delegando la gestión de hilos al servidor de aplicaciones subyacente."
@@ -521,10 +1069,26 @@ export const initialBank: Question[] = [
     "questionText": "Marque las opciones verdaderas respecto a los conectores ASO:",
     "type": "multiple",
     "options": [
-      { "id": "q43_o1", "text": "el método perform de la clase BackendConnector permite consumir un backend APX", "isCorrect": false },
-      { "id": "q43_o2", "text": "las anotaciones @Transacion y @RespuestaTransaccion van sobre las clases involucradas en la peticion y respuesta respectivamente", "isCorrect": true },
-      { "id": "q43_o3", "text": "el método invocar de la clase ServicioTransacciones permite consumir un backend host / APX de manera sincrona", "isCorrect": true },
-      { "id": "q43_o4", "text": "La dependencia kermit contiene las clases de arquitectura de los conectores backend usados por ASO", "isCorrect": false }
+      {
+        "id": "q43_o1",
+        "text": "el método perform de la clase BackendConnector permite consumir un backend APX",
+        "isCorrect": false
+      },
+      {
+        "id": "q43_o2",
+        "text": "las anotaciones @Transacion y @RespuestaTransaccion van sobre las clases involucradas en la peticion y respuesta respectivamente",
+        "isCorrect": true
+      },
+      {
+        "id": "q43_o3",
+        "text": "el método invocar de la clase ServicioTransacciones permite consumir un backend host / APX de manera sincrona",
+        "isCorrect": true
+      },
+      {
+        "id": "q43_o4",
+        "text": "La dependencia kermit contiene las clases de arquitectura de los conectores backend usados por ASO",
+        "isCorrect": false
+      }
     ],
     "hint": "Enfócate en cómo se invocan las transacciones y cómo se mapean las clases.",
     "explanation": "El uso de @Transacion y @RespuestaTransaccion es el estándar para mapear clases a transacciones host/APX, las cuales se invocan típicamente mediante ServicioTransacciones."
@@ -534,8 +1098,16 @@ export const initialBank: Question[] = [
     "questionText": "Kermit es el plugin maven que permite generar las clases java de los modelos en base a los descriptores de la transaccion(host o apx)",
     "type": "single",
     "options": [
-      { "id": "q44_o1", "text": "true", "isCorrect": true },
-      { "id": "q44_o2", "text": "false", "isCorrect": false }
+      {
+        "id": "q44_o1",
+        "text": "true",
+        "isCorrect": true
+      },
+      {
+        "id": "q44_o2",
+        "text": "false",
+        "isCorrect": false
+      }
     ],
     "hint": "Identifica la herramienta encargada del andamiaje (scaffolding) de transacciones.",
     "explanation": "Kermit es una herramienta esencial en el ecosistema ASO para automatizar la creación de DTOs a partir de los contratos definidos para el mainframe (Host) o APX."
@@ -545,10 +1117,26 @@ export const initialBank: Question[] = [
     "questionText": "Es el identificador unico que permite reconocer a una aplicación consumidora de servicios",
     "type": "single",
     "options": [
-      { "id": "q45_o1", "text": "SMC", "isCorrect": false },
-      { "id": "q45_o2", "text": "AAP", "isCorrect": true },
-      { "id": "q45_o3", "text": "TSEC", "isCorrect": false },
-      { "id": "q45_o4", "text": "UUAA", "isCorrect": false }
+      {
+        "id": "q45_o1",
+        "text": "SMC",
+        "isCorrect": false
+      },
+      {
+        "id": "q45_o2",
+        "text": "AAP",
+        "isCorrect": true
+      },
+      {
+        "id": "q45_o3",
+        "text": "TSEC",
+        "isCorrect": false
+      },
+      {
+        "id": "q45_o4",
+        "text": "UUAA",
+        "isCorrect": false
+      }
     ],
     "hint": "Sus siglas significan 'Application of APlication'.",
     "explanation": "El código AAP identifica a la aplicación cliente que realiza la petición, permitiendo aplicar políticas de seguridad y cuotas específicas."
@@ -558,10 +1146,26 @@ export const initialBank: Question[] = [
     "questionText": "¿Cual es el flujo para actualizar el usuario transaccional para una determinada AAP en previos?",
     "type": "single",
     "options": [
-      { "id": "q46_o1", "text": "Ninguno", "isCorrect": false },
-      { "id": "q46_o2", "text": "Generar ticket Dependencia al equipo de Gobierno Local API (aso.pe)", "isCorrect": true },
-      { "id": "q46_o3", "text": "Generar ticket de Despliegue Work al equipo de Bancking Architecture", "isCorrect": false },
-      { "id": "q46_o4", "text": "Generar ticket Dependencia al equipo de Security Architect (security.architect.pe.group)", "isCorrect": false }
+      {
+        "id": "q46_o1",
+        "text": "Ninguno",
+        "isCorrect": false
+      },
+      {
+        "id": "q46_o2",
+        "text": "Generar ticket Dependencia al equipo de Gobierno Local API (aso.pe)",
+        "isCorrect": false
+      },
+      {
+        "id": "q46_o3",
+        "text": "Generar ticket de Despliegue Work al equipo de Bancking Architecture",
+        "isCorrect": false
+      },
+      {
+        "id": "q46_o4",
+        "text": "Generar ticket Dependencia al equipo de Security Architect (security.architect.pe.group)",
+        "isCorrect": true
+      }
     ],
     "hint": "Busca el equipo responsable de la gobernanza de servicios ASO en el país.",
     "explanation": "Cualquier ajuste administrativo o de permisos sobre una AAP debe ser gestionado a través de los canales de Gobierno Local de APIs."
@@ -571,11 +1175,31 @@ export const initialBank: Question[] = [
     "questionText": "¿Que tickets debe contener el ticket despliegue live?",
     "type": "single",
     "options": [
-      { "id": "q47_o1", "text": "Ticket Release GDC", "isCorrect": false },
-      { "id": "q47_o2", "text": "Ticket Release GDC + Ticket consumo + Ticket Release 2.0", "isCorrect": true },
-      { "id": "q47_o3", "text": "Ticket Release GDC + Ticket Diseño + Ticket Construccion + Ticket Release 2.0", "isCorrect": false },
-      { "id": "q47_o4", "text": "Ticket Consumo + Ticket Release 2.0", "isCorrect": false },
-      { "id": "q47_o5", "text": "Ticket Diseño + Ticket Construccion + Ticket Release 2.0", "isCorrect": false }
+      {
+        "id": "q47_o1",
+        "text": "Ticket Release GDC",
+        "isCorrect": false
+      },
+      {
+        "id": "q47_o2",
+        "text": "Ticket Release GDC + Ticket consumo + Ticket Release 2.0",
+        "isCorrect": true
+      },
+      {
+        "id": "q47_o3",
+        "text": "Ticket Release GDC + Ticket Diseño + Ticket Construccion + Ticket Release 2.0",
+        "isCorrect": false
+      },
+      {
+        "id": "q47_o4",
+        "text": "Ticket Consumo + Ticket Release 2.0",
+        "isCorrect": false
+      },
+      {
+        "id": "q47_o5",
+        "text": "Ticket Diseño + Ticket Construccion + Ticket Release 2.0",
+        "isCorrect": false
+      }
     ],
     "hint": "El despliegue a producción requiere la consolidación de varios tipos de autorización y registro.",
     "explanation": "Para un pase a Live, se requiere el ticket de GDC (despliegue técnico), el ticket de consumo (autorización de clientes) y el ticket de Release 2.0 (seguimiento del flujo)."
@@ -585,8 +1209,16 @@ export const initialBank: Question[] = [
     "questionText": "Las pruebas locales de un servicio ASO se pueden hacer desde docker o podman descargando la imagen de ASO desde aetifactory",
     "type": "single",
     "options": [
-      { "id": "q48_o1", "text": "true", "isCorrect": true },
-      { "id": "q48_o2", "text": "false", "isCorrect": false }
+      {
+        "id": "q48_o1",
+        "text": "true",
+        "isCorrect": true
+      },
+      {
+        "id": "q48_o2",
+        "text": "false",
+        "isCorrect": false
+      }
     ],
     "hint": "Considera si la arquitectura permite contenedores para el desarrollo local.",
     "explanation": "La arquitectura ASO provee imágenes de contenedor oficiales en Artifactory para que los desarrolladores puedan emular el entorno de ejecución localmente."
@@ -596,8 +1228,16 @@ export const initialBank: Question[] = [
     "questionText": "Relacione correctamente los comandos de podman: 1.- Copiar archivos ente localhost y contenedor | 2.- Ejecutar un comando dentro de un contenedor | 3.- Iniciar el contenedor | 4.- Crear e iniciar el contenedor",
     "type": "single",
     "options": [
-      { "id": "q49_o1", "text": "1-cp, 2-exec, 3-start, 4-run", "isCorrect": true },
-      { "id": "q49_o2", "text": "1-run, 2-start, 3-exec, 4-cp", "isCorrect": false }
+      {
+        "id": "q49_o1",
+        "text": "1-cp, 2-exec, 3-start, 4-run",
+        "isCorrect": true
+      },
+      {
+        "id": "q49_o2",
+        "text": "1-run, 2-start, 3-exec, 4-cp",
+        "isCorrect": false
+      }
     ],
     "hint": "Los comandos de Podman son casi idénticos a los de Docker.",
     "explanation": "cp copia archivos, exec ejecuta procesos en contenedores activos, start inicia uno detenido y run crea uno nuevo e inicia."
@@ -607,12 +1247,28 @@ export const initialBank: Question[] = [
     "questionText": "Dentro del flujo quien es el responsable de autorizar el Pull Request de una rama Feature a la rama Develop",
     "type": "single",
     "options": [
-      { "id": "q50_o1", "text": "Developer", "isCorrect": false },
-      { "id": "q50_o2", "text": "QA", "isCorrect": false },
-      { "id": "q50_o3", "text": "Release Manager", "isCorrect": true },
-      { "id": "q50_o4", "text": "Solution Architect", "isCorrect": false }
+      {
+        "id": "q50_o1",
+        "text": "Developer",
+        "isCorrect": false
+      },
+      {
+        "id": "q50_o2",
+        "text": "QA",
+        "isCorrect": false
+      },
+      {
+        "id": "q50_o3",
+        "text": "Release Manager",
+        "isCorrect": true
+      },
+      {
+        "id": "q50_o4",
+        "text": "Solution Architect",
+        "isCorrect": false
+      }
     ],
-    "hint": "Identifica al equipo de soporte especializado en la infraestructura de la arquitectura.",
+    "hint": "Identifica el rol encargado de la integridad de las ramas de integración.",
     "explanation": "El Release Manager tiene la responsabilidad de validar que el código de la feature cumple con los requisitos mínimos antes de integrarlo en la rama develop."
   },
   {
@@ -620,10 +1276,26 @@ export const initialBank: Question[] = [
     "questionText": "¿Que rol dentro de la consola ether, es el encargado de aceptar los PR e integrar los cambios de la rama 'Feature' a la rama 'Develop'?",
     "type": "single",
     "options": [
-      { "id": "q51_o1", "text": "Developer", "isCorrect": false },
-      { "id": "q51_o2", "text": "Solution Architect", "isCorrect": false },
-      { "id": "q51_o3", "text": "Release Manager", "isCorrect": true },
-      { "id": "q51_o4", "text": "Tech Lead", "isCorrect": false }
+      {
+        "id": "q51_o1",
+        "text": "Developer",
+        "isCorrect": false
+      },
+      {
+        "id": "q51_o2",
+        "text": "Solution Architect",
+        "isCorrect": false
+      },
+      {
+        "id": "q51_o3",
+        "text": "Release Manager",
+        "isCorrect": true
+      },
+      {
+        "id": "q51_o4",
+        "text": "Tech Lead",
+        "isCorrect": false
+      }
     ],
     "hint": "Es el mismo rol responsable de la gestión de releases.",
     "explanation": "En la plataforma Ether, el Release Manager es quien supervisa y aprueba las integraciones entre ramas del flujo de Gitflow."
@@ -633,8 +1305,16 @@ export const initialBank: Question[] = [
     "questionText": "¿Para servicios ASO LINK es posible implementar anotaciones de restriccion en DTO manualmente?",
     "type": "single",
     "options": [
-      { "id": "q52_o1", "text": "false", "isCorrect": true },
-      { "id": "q52_o2", "text": "true", "isCorrect": false }
+      {
+        "id": "q52_o1",
+        "text": "false",
+        "isCorrect": true
+      },
+      {
+        "id": "q52_o2",
+        "text": "true",
+        "isCorrect": false
+      }
     ],
     "hint": "Considera si el código generado por herramientas de linkado debe ser modificado manualmente.",
     "explanation": "Falso. Los servicios ASO LINK dependen de código generado automáticamente. Modificaciones manuales se perderían en la siguiente regeneración o romperían el contrato."
@@ -644,8 +1324,16 @@ export const initialBank: Question[] = [
     "questionText": "La unica forma de autenticacion en ASO es OAUTH 2.0",
     "type": "single",
     "options": [
-      { "id": "q53_o1", "text": "false", "isCorrect": true },
-      { "id": "q53_o2", "text": "true", "isCorrect": false }
+      {
+        "id": "q53_o1",
+        "text": "false",
+        "isCorrect": true
+      },
+      {
+        "id": "q53_o2",
+        "text": "true",
+        "isCorrect": false
+      }
     ],
     "hint": "¿Existen servicios internos o de legacy que usen otros mecanismos como TSEC?",
     "explanation": "Aunque OAUTH 2.0 es el estándar recomendado, ASO soporta otros mecanismos de autenticación como TSEC, especialmente en flujos internos o antiguos."
@@ -655,8 +1343,16 @@ export const initialBank: Question[] = [
     "questionText": "Si se requiere testear un metodo que implemente paginacion, la clase del test debe estar anotada necesariamente con @RunWith(MockitoJUnitRunner.class)",
     "type": "single",
     "options": [
-      { "id": "q54_o1", "text": "false", "isCorrect": true },
-      { "id": "q54_o2", "text": "true", "isCorrect": false }
+      {
+        "id": "q54_o1",
+        "text": "false",
+        "isCorrect": true
+      },
+      {
+        "id": "q54_o2",
+        "text": "true",
+        "isCorrect": false
+      }
     ],
     "hint": "¿La paginación depende exclusivamente del corredor de pruebas de Mockito?",
     "explanation": "Falso. MockitoJUnitRunner es una utilidad para inicializar mocks, pero no es un requisito funcional para probar la lógica de paginación; se pueden usar otros métodos de inicialización."
@@ -666,10 +1362,26 @@ export const initialBank: Question[] = [
     "questionText": "Son algunos de los controles de autorizacion que provee ASO",
     "type": "multiple",
     "options": [
-      { "id": "q55_o1", "text": "GT", "isCorrect": true },
-      { "id": "q55_o2", "text": "Fraude", "isCorrect": true },
-      { "id": "q55_o3", "text": "Fido", "isCorrect": false },
-      { "id": "q55_o4", "text": "IMC", "isCorrect": true }
+      {
+        "id": "q55_o1",
+        "text": "GT",
+        "isCorrect": true
+      },
+      {
+        "id": "q55_o2",
+        "text": "Fraude",
+        "isCorrect": true
+      },
+      {
+        "id": "q55_o3",
+        "text": "Fido",
+        "isCorrect": false
+      },
+      {
+        "id": "q55_o4",
+        "text": "IMC",
+        "isCorrect": true
+      }
     ],
     "hint": "Busca siglas relacionadas con el control de acceso global, fraude e identidad.",
     "explanation": "ASO se integra con sistemas de autorización como GT (Gestión Transaccional), motores de Fraude e IMC para validar la capacidad del usuario de ejecutar acciones."
@@ -679,10 +1391,26 @@ export const initialBank: Question[] = [
     "questionText": "Marque las opciones verdaderas sobre el manejo de archivos adjunts en ASO",
     "type": "multiple",
     "options": [
-      { "id": "q56_o1", "text": "Existen diferentes formatos de contenido multiparte. Alguno de los subtipos son altenative y form-data", "isCorrect": true },
-      { "id": "q56_o2", "text": "No hay limite en el tamaño por archivo que puede ser enviado en una petición", "isCorrect": true },
-      { "id": "q56_o3", "text": "El envió de archivos adjuntos por el protocolo HTTP esta definido en la RFC 1341 por la W3C", "isCorrect": true },
-      { "id": "q56_o4", "text": "Los argumentos de un metodo en la implementacion de fachada de un servicio deben estar anotados con @Multipart(...) indicando dentro de esta anotación el identificador y el tipo de dato esperando del elemento que sera enviado por el consumidor", "isCorrect": false }
+      {
+        "id": "q56_o1",
+        "text": "Existen diferentes formatos de contenido multiparte. Alguno de los subtipos son altenative y form-data",
+        "isCorrect": true
+      },
+      {
+        "id": "q56_o2",
+        "text": "No hay limite en el tamaño por archivo que puede ser enviado en una petición",
+        "isCorrect": true
+      },
+      {
+        "id": "q56_o3",
+        "text": "El envió de archivos adjuntos por el protocolo HTTP esta definido en la RFC 1341 por la W3C",
+        "isCorrect": true
+      },
+      {
+        "id": "q56_o4",
+        "text": "Los argumentos de un metodo en la implementacion de fachada de un servicio deben estar anotados con @Multipart(...) indicando dentro de esta anotación el identificador y el tipo de dato esperando del elemento que sera enviado por el consumidor",
+        "isCorrect": false
+      }
     ],
     "hint": "Revisa los estándares de multipart y las capacidades técnicas de ASO.",
     "explanation": "ASO soporta el estándar Multipart de HTTP. Nota: En la práctica, siempre existen límites físicos o de infraestructura para el tamaño de archivos, aunque la arquitectura base no imponga uno rígido."
@@ -692,10 +1420,26 @@ export const initialBank: Question[] = [
     "questionText": "¿Qué clases permiten controlar las cabeceras de entrada y salida?",
     "type": "multiple",
     "options": [
-      { "id": "q57_o1", "text": "OutputHeaderManager", "isCorrect": true },
-      { "id": "q57_o2", "text": "RequestManager", "isCorrect": false },
-      { "id": "q57_o3", "text": "InputHeaderManager", "isCorrect": true },
-      { "id": "q57_o4", "text": "ServiceInvocationContext", "isCorrect": false }
+      {
+        "id": "q57_o1",
+        "text": "OutputHeaderManager",
+        "isCorrect": true
+      },
+      {
+        "id": "q57_o2",
+        "text": "RequestManager",
+        "isCorrect": false
+      },
+      {
+        "id": "q57_o3",
+        "text": "InputHeaderManager",
+        "isCorrect": true
+      },
+      {
+        "id": "q57_o4",
+        "text": "ServiceInvocationContext",
+        "isCorrect": false
+      }
     ],
     "hint": "Los nombres de las clases son muy descriptivos de su función (Input/Output).",
     "explanation": "InputHeaderManager y OutputHeaderManager son las clases de utilidad provistas por el framework ASO para manipular headers HTTP sin interactuar directamente con el Servlet."
@@ -705,20 +1449,40 @@ export const initialBank: Question[] = [
     "questionText": "Relacione correctamente los metodos de la clase ServiceInvocationContext y su descripcion",
     "type": "single",
     "options": [
-      { "id": "q58_o1", "text": "getProperty('aap') - Identificador de canal ASO", "isCorrect": true }
+      {
+        "id": "q58_o1",
+        "text": "getProperty('aap') - Identificador de canal ASO",
+        "isCorrect": true
+      }
     ],
     "hint": "Busca la propiedad que almacena el identificador de la aplicación cliente.",
     "explanation": "ServiceInvocationContext permite acceder a metadatos de la ejecución, donde 'aap' es la propiedad que identifica la aplicación consumidora."
   },
   {
     "id": "q59",
-    "questionText": "En en casos se presenta el siguiente error en el servicio ASO: TransporteRest.sendReceive.error java.lang.IllegalStateException: Entity input stream has already been closed?",
+    "questionText": "En que casos se presenta el siguiente error en el servicio ASO:TransporteRest.sendReceive.error java.lang.IllegalStateException: Entity input stream has already been closed?",
     "type": "single",
     "options": [
-      { "id": "q59_o1", "text": "Ninguno", "isCorrect": false },
-      { "id": "q59_o2", "text": "Problemas de ambientacion de datos", "isCorrect": false },
-      { "id": "q59_o3", "text": "Error porque falta activar parametros en la consola de seguridad.", "isCorrect": false },
-      { "id": "q59_o4", "text": "Ocurre en develop, cuando se configura la category con el valor de '20'", "isCorrect": true }
+      {
+        "id": "q59_o1",
+        "text": "Ninguno",
+        "isCorrect": false
+      },
+      {
+        "id": "q59_o2",
+        "text": "Problemas de ambientacion de datos",
+        "isCorrect": false
+      },
+      {
+        "id": "q59_o3",
+        "text": "Error porque falta activar parametros en la consola de seguridad.",
+        "isCorrect": false
+      },
+      {
+        "id": "q59_o4",
+        "text": "Ocurre en develop, cuando se configura la category con el valor de '20'",
+        "isCorrect": true
+      }
     ],
     "hint": "Es un error técnico específico relacionado con la configuración de la categoría del log o monitoreo.",
     "explanation": "Este error ocurre típicamente por una mala configuración en los niveles de traza/categoría que intenta leer el flujo de entrada después de que ha sido consumido."
@@ -728,10 +1492,26 @@ export const initialBank: Question[] = [
     "questionText": "En que casos se puede presentar el siguiente error: 'No service was found'?",
     "type": "single",
     "options": [
-      { "id": "q60_o1", "text": "Pendiente de tomar los reinicios", "isCorrect": false },
-      { "id": "q60_o2", "text": "Todos", "isCorrect": true },
-      { "id": "q60_o3", "text": "Componente corrupto", "isCorrect": false },
-      { "id": "q60_o4", "text": "El endpoint con el que está probando no es el correpto", "isCorrect": false }
+      {
+        "id": "q60_o1",
+        "text": "Pendiente de tomar los reinicios",
+        "isCorrect": false
+      },
+      {
+        "id": "q60_o2",
+        "text": "Todos",
+        "isCorrect": true
+      },
+      {
+        "id": "q60_o3",
+        "text": "Componente corrupto",
+        "isCorrect": false
+      },
+      {
+        "id": "q60_o4",
+        "text": "El endpoint con el que está probando no es el correpto",
+        "isCorrect": false
+      }
     ],
     "hint": "Considera todas las razones por las que un servidor no encontraría un recurso mapeado.",
     "explanation": "Este error es genérico e indica que el servidor no puede localizar la implementación del endpoint, ya sea por errores de despliegue, URL incorrecta o falta de carga del componente."
@@ -741,10 +1521,26 @@ export const initialBank: Question[] = [
     "questionText": "Cual es la forma correcta de implementacion, si se requiere responder desde un servicio ASO con el estado HTTP 303 - See Other?",
     "type": "single",
     "options": [
-      { "id": "q61_o1", "text": "throw BusinessServiceException.throw('redirectSeeOther');", "isCorrect": false },
-      { "id": "q61_o2", "text": "No es necesario su implementacion, ya que la arquitectura la lanza internaente", "isCorrect": false },
-      { "id": "q61_o3", "text": "throw new BusinessServiceException('redirectSeeOther')", "isCorrect": true },
-      { "id": "q61_o4", "text": "ServiceInvocationContext.redirect('redirectSeeOther')", "isCorrect": false }
+      {
+        "id": "q61_o1",
+        "text": "throw BusinessServiceException.throw('redirectSeeOther');",
+        "isCorrect": false
+      },
+      {
+        "id": "q61_o2",
+        "text": "No es necesario su implementacion, ya que la arquitectura la lanza internaente",
+        "isCorrect": false
+      },
+      {
+        "id": "q61_o3",
+        "text": "throw new BusinessServiceException('redirectSeeOther')",
+        "isCorrect": true
+      },
+      {
+        "id": "q61_o4",
+        "text": "ServiceInvocationContext.redirect('redirectSeeOther')",
+        "isCorrect": false
+      }
     ],
     "hint": "Se utiliza una excepción de negocio controlada que la arquitectura mapea al código 303.",
     "explanation": "Para redirigir al consumidor bajo el estándar ASO, se lanza una BusinessServiceException con una clave específica que el interceptor de salida traduce como un 303."
@@ -754,11 +1550,31 @@ export const initialBank: Question[] = [
     "questionText": "Cuales son los adaptadores que proporciona la arquitectura ASO para el manejo de fechas y tiempo?",
     "type": "multiple",
     "options": [
-      { "id": "q62_o1", "text": "DateTimeAdapter", "isCorrect": false },
-      { "id": "q62_o2", "text": "DateAdapter", "isCorrect": true },
-      { "id": "q62_o3", "text": "TimeAdapter", "isCorrect": true },
-      { "id": "q62_o4", "text": "ShortDateAdapter", "isCorrect": true },
-      { "id": "q62_o5", "text": "CalendarAdapter", "isCorrect": false }
+      {
+        "id": "q62_o1",
+        "text": "DateTimeAdapter",
+        "isCorrect": false
+      },
+      {
+        "id": "q62_o2",
+        "text": "DateAdapter",
+        "isCorrect": true
+      },
+      {
+        "id": "q62_o3",
+        "text": "TimeAdapter",
+        "isCorrect": true
+      },
+      {
+        "id": "q62_o4",
+        "text": "ShortDateAdapter",
+        "isCorrect": true
+      },
+      {
+        "id": "q62_o5",
+        "text": "CalendarAdapter",
+        "isCorrect": false
+      }
     ],
     "hint": "Identifica los nombres de clases estándar de la arquitectura para mapear tipos temporales.",
     "explanation": "ASO proporciona DateAdapter, TimeAdapter y ShortDateAdapter para asegurar que las fechas se serialicen correctamente según los estándares del banco."
@@ -768,10 +1584,26 @@ export const initialBank: Question[] = [
     "questionText": "¿Que tipo de configuracion No se realiza en el archivo application.properties?",
     "type": "single",
     "options": [
-      { "id": "q63_o1", "text": "Configuracion Cryptokeys", "isCorrect": false },
-      { "id": "q63_o2", "text": "Configuracion URL backend (Rest o Soap)", "isCorrect": true },
-      { "id": "q63_o3", "text": "Configuracion biocatch", "isCorrect": false },
-      { "id": "q63_o4", "text": "Configuracion Enum", "isCorrect": false }
+      {
+        "id": "q63_o1",
+        "text": "Configuracion Cryptokeys",
+        "isCorrect": false
+      },
+      {
+        "id": "q63_o2",
+        "text": "Configuracion URL backend (Rest o Soap)",
+        "isCorrect": true
+      },
+      {
+        "id": "q63_o3",
+        "text": "Configuracion biocatch",
+        "isCorrect": false
+      },
+      {
+        "id": "q63_o4",
+        "text": "Configuracion Enum",
+        "isCorrect": false
+      }
     ],
     "hint": "¿Dónde se suelen configurar los endpoints externos en una arquitectura desacoplada?",
     "explanation": "Las URLs de backends se gestionan típicamente a través de consolas de administración o archivos de configuración de infraestructura dinámica, no directamente en el application.properties del empaquetado."
@@ -781,10 +1613,26 @@ export const initialBank: Question[] = [
     "questionText": "¿Como inyectamos MapStruct?",
     "type": "single",
     "options": [
-      { "id": "q64_o1", "text": "a - @MapperStruct(component = 'springBoot')", "isCorrect": false },
-      { "id": "q64_o2", "text": "b - @Mapper(componentModel = 'spring')", "isCorrect": true },
-      { "id": "q64_o3", "text": "c - @Mapper", "isCorrect": false },
-      { "id": "q64_o4", "text": "d - @Maper", "isCorrect": false }
+      {
+        "id": "q64_o1",
+        "text": "a - @MapperStruct(component = 'springBoot')",
+        "isCorrect": false
+      },
+      {
+        "id": "q64_o2",
+        "text": "b - @Mapper(componentModel = 'spring')",
+        "isCorrect": true
+      },
+      {
+        "id": "q64_o3",
+        "text": "c - @Mapper",
+        "isCorrect": false
+      },
+      {
+        "id": "q64_o4",
+        "text": "d - @Maper",
+        "isCorrect": false
+      }
     ],
     "hint": "Busca la anotación correcta de MapStruct que permite la integración con el contenedor de Spring.",
     "explanation": "Para que Spring pueda inyectar los mappers generados por MapStruct como beans, se debe usar la anotación @Mapper con el atributo componentModel='spring'."
@@ -794,10 +1642,26 @@ export const initialBank: Question[] = [
     "questionText": "Que proporciona Maven",
     "type": "single",
     "options": [
-      { "id": "q65_o1", "text": "Librerias para el desarrollo y ejecucion de test unitarios", "isCorrect": false },
-      { "id": "q65_o2", "text": "Una herramienta para la gestion y build de los proyectos java para el desarrollo de componentes ASO", "isCorrect": true },
-      { "id": "q65_o3", "text": "Un software interno para la promocion por ambientes y puesta en producción de los componentes ASO", "isCorrect": false },
-      { "id": "q65_o4", "text": "Automatiza el despliegue de los componentes ASO en contenedores", "isCorrect": false }
+      {
+        "id": "q65_o1",
+        "text": "Librerias para el desarrollo y ejecucion de test unitarios",
+        "isCorrect": false
+      },
+      {
+        "id": "q65_o2",
+        "text": "Una herramienta para la gestion y build de los proyectos java para el desarrollo de componentes ASO",
+        "isCorrect": true
+      },
+      {
+        "id": "q65_o3",
+        "text": "Un software interno para la promocion por ambientes y puesta en producción de los componentes ASO",
+        "isCorrect": false
+      },
+      {
+        "id": "q65_o4",
+        "text": "Automatiza el despliegue de los componentes ASO en contenedores",
+        "isCorrect": false
+      }
     ],
     "hint": "Piensa en su función principal: compilación y gestión de dependencias.",
     "explanation": "Maven es una herramienta de gestión de proyectos que automatiza la construcción (build), la gestión de dependencias y el ciclo de vida del software Java."
@@ -807,8 +1671,16 @@ export const initialBank: Question[] = [
     "questionText": "Un servicio puede ser multioperativo si realiza más de dos funcionalidades de negocio que tienen el mismo o diferente nivel de seguridad",
     "type": "single",
     "options": [
-      { "id": "q66_o1", "text": "true", "isCorrect": false },
-      { "id": "q66_o2", "text": "false", "isCorrect": true }
+      {
+        "id": "q66_o1",
+        "text": "true",
+        "isCorrect": false
+      },
+      {
+        "id": "q66_o2",
+        "text": "false",
+        "isCorrect": true
+      }
     ],
     "hint": "Recuerda el principio de granularidad y seguridad en APIs modernas.",
     "explanation": "Falso. Mezclar niveles de seguridad en un solo servicio rompe el aislamiento y el control de acceso. Los servicios deben ser granulares y coherentes en su seguridad."
@@ -818,8 +1690,16 @@ export const initialBank: Question[] = [
     "questionText": "El ofuscado basico implica que todos los caracteres del valor de un campo se mostrarán con un asteristico en la herramienta de monitoreo",
     "type": "single",
     "options": [
-      { "id": "q67_o1", "text": "true", "isCorrect": true },
-      { "id": "q67_o2", "text": "false", "isCorrect": false }
+      {
+        "id": "q67_o1",
+        "text": "true",
+        "isCorrect": true
+      },
+      {
+        "id": "q67_o2",
+        "text": "false",
+        "isCorrect": false
+      }
     ],
     "hint": "Es una técnica común para ocultar datos sensibles en logs.",
     "explanation": "Verdadero. El ofuscado básico protege la información sensible sustituyendo el contenido real por caracteres de máscara (como asteriscos) en los logs de monitoreo."
@@ -829,11 +1709,31 @@ export const initialBank: Question[] = [
     "questionText": "En las hojas de P110(LO/PROD) necesario para el pase a producción ¿Cuales son algunos campos obligatorios que se deben completar?",
     "type": "single",
     "options": [
-      { "id": "q68_o1", "text": "N° Ticket Jira o ServiceNow", "isCorrect": false },
-      { "id": "q68_o2", "text": "Nombre y Apellidos de change Managment", "isCorrect": false },
-      { "id": "q68_o3", "text": "Todos", "isCorrect": true },
-      { "id": "q68_o4", "text": "Nombre y Apellidos del QE", "isCorrect": false },
-      { "id": "q68_o5", "text": "Nombre y Apellidos del LT, TL, SM, Lider Reliability", "isCorrect": false }
+      {
+        "id": "q68_o1",
+        "text": "N° Ticket Jira o ServiceNow",
+        "isCorrect": false
+      },
+      {
+        "id": "q68_o2",
+        "text": "Nombre y Apellidos de change Managment",
+        "isCorrect": false
+      },
+      {
+        "id": "q68_o3",
+        "text": "Todos",
+        "isCorrect": true
+      },
+      {
+        "id": "q68_o4",
+        "text": "Nombre y Apellidos del QE",
+        "isCorrect": false
+      },
+      {
+        "id": "q68_o5",
+        "text": "Nombre y Apellidos del LT, TL, SM, Lider Reliability",
+        "isCorrect": false
+      }
     ],
     "hint": "Este documento es crítico para la trazabilidad del cambio en producción.",
     "explanation": "El documento P110 requiere información completa de tickets de seguimiento y responsables de cada área para garantizar la seguridad del despliegue en producción."
@@ -843,10 +1743,26 @@ export const initialBank: Question[] = [
     "questionText": "Los despliegues de componentes en el entornos de la Liga Oculta y Produccion requieren dos autorizaciones ¿Quienes son los responsables?",
     "type": "single",
     "options": [
-      { "id": "q69_o1", "text": "Technical Lead + Developer", "isCorrect": false },
-      { "id": "q69_o2", "text": "Solution Architect + Release Manager", "isCorrect": false },
-      { "id": "q69_o3", "text": "Solo gestion de cambios", "isCorrect": false },
-      { "id": "q69_o4", "text": "Gestion de cambios + Release Manager", "isCorrect": true }
+      {
+        "id": "q69_o1",
+        "text": "Technical Lead + Developer",
+        "isCorrect": false
+      },
+      {
+        "id": "q69_o2",
+        "text": "Solution Architect + Release Manager",
+        "isCorrect": false
+      },
+      {
+        "id": "q69_o3",
+        "text": "Solo gestion de cambios",
+        "isCorrect": false
+      },
+      {
+        "id": "q69_o4",
+        "text": "Gestion de cambios + Release Manager",
+        "isCorrect": true
+      }
     ],
     "hint": "Identifica los roles que validan el proceso de negocio y el proceso técnico final.",
     "explanation": "El despliegue a producción es una acción crítica que debe ser validada por Gestión de Cambios (procesos) y el Release Manager (técnico)."
@@ -856,10 +1772,26 @@ export const initialBank: Question[] = [
     "questionText": "¿Que rama se debe desplegar hasta los entornos de Liga Oculta y Produccin?",
     "type": "single",
     "options": [
-      { "id": "q70_o1", "text": "Rama Master", "isCorrect": false },
-      { "id": "q70_o2", "text": "Rama Integrating", "isCorrect": false },
-      { "id": "q70_o3", "text": "Rama Release Candidate", "isCorrect": true },
-      { "id": "q70_o4", "text": "Rama develop", "isCorrect": false }
+      {
+        "id": "q70_o1",
+        "text": "Rama Master",
+        "isCorrect": false
+      },
+      {
+        "id": "q70_o2",
+        "text": "Rama Integrating",
+        "isCorrect": false
+      },
+      {
+        "id": "q70_o3",
+        "text": "Rama Release Candidate",
+        "isCorrect": true
+      },
+      {
+        "id": "q70_o4",
+        "text": "Rama develop",
+        "isCorrect": false
+      }
     ],
     "hint": "Busca la rama que contiene la versión candidata final después de pasar pruebas.",
     "explanation": "La rama 'Release Candidate' contiene el código estabilizado y probado que está listo para ser promovido a los entornos finales de producción."
@@ -869,10 +1801,26 @@ export const initialBank: Question[] = [
     "questionText": "¿Que documento se debe completar para LO/PROD y adjuntar al ticket Release GDC luego de tener fecha de pase a produccion?",
     "type": "single",
     "options": [
-      { "id": "q71_o1", "text": "P110", "isCorrect": false },
-      { "id": "q71_o2", "text": "Todos", "isCorrect": true },
-      { "id": "q71_o3", "text": "T907 y C204", "isCorrect": false },
-      { "id": "q71_o4", "text": "Excel de configuraciones", "isCorrect": false }
+      {
+        "id": "q71_o1",
+        "text": "P110",
+        "isCorrect": false
+      },
+      {
+        "id": "q71_o2",
+        "text": "Todos",
+        "isCorrect": true
+      },
+      {
+        "id": "q71_o3",
+        "text": "T907 y C204",
+        "isCorrect": false
+      },
+      {
+        "id": "q71_o4",
+        "text": "Excel de configuraciones",
+        "isCorrect": false
+      }
     ],
     "hint": "Considera todos los formularios de cumplimiento técnico y operativo.",
     "explanation": "Para asegurar un despliegue exitoso y documentado, se requieren los formularios de pruebas (T907/C204), el P110 y el detalle de configuraciones."
@@ -882,10 +1830,26 @@ export const initialBank: Question[] = [
     "questionText": "¿Cuales son los dias y horarios recomendados para realizar una ventana?",
     "type": "single",
     "options": [
-      { "id": "q72_o1", "text": "Todos", "isCorrect": false },
-      { "id": "q72_o2", "text": "Solo Lunes", "isCorrect": false },
-      { "id": "q72_o3", "text": "Lunes, Miercoles y Viernes de 8:00 am a 10:00 am", "isCorrect": true },
-      { "id": "q72_o4", "text": "Lunes, Jueves de 9:00 am a 11:00 am", "isCorrect": false }
+      {
+        "id": "q72_o1",
+        "text": "Todos",
+        "isCorrect": false
+      },
+      {
+        "id": "q72_o2",
+        "text": "Solo Lunes",
+        "isCorrect": false
+      },
+      {
+        "id": "q72_o3",
+        "text": "Lunes, Miercoles y Viernes de 8:00 am a 10:00 am",
+        "isCorrect": true
+      },
+      {
+        "id": "q72_o4",
+        "text": "Lunes, Jueves de 9:00 am a 11:00 am",
+        "isCorrect": false
+      }
     ],
     "hint": "Existen ventanas de mantenimiento predefinidas para minimizar el impacto.",
     "explanation": "Las ventanas estándar para despliegues programados suelen ser lunes, miércoles y viernes en horario matutino temprano para permitir reacción durante el día."
@@ -895,10 +1859,26 @@ export const initialBank: Question[] = [
     "questionText": "Culminada las pruebas en test para servicios nuevos y para servicios modificados(opcional) ¿Cual es el ticket Jira 2.0 que se debe crear?",
     "type": "single",
     "options": [
-      { "id": "q73_o1", "text": "Ticket de Despliegue ASO Work", "isCorrect": false },
-      { "id": "q73_o2", "text": "Ticket Release 2.0", "isCorrect": false },
-      { "id": "q73_o3", "text": "Ticket de Diseño", "isCorrect": false },
-      { "id": "q73_o4", "text": "Ticket de Consumo", "isCorrect": true }
+      {
+        "id": "q73_o1",
+        "text": "Ticket de Despliegue ASO Work",
+        "isCorrect": false
+      },
+      {
+        "id": "q73_o2",
+        "text": "Ticket Release 2.0",
+        "isCorrect": false
+      },
+      {
+        "id": "q73_o3",
+        "text": "Ticket de Diseño",
+        "isCorrect": false
+      },
+      {
+        "id": "q73_o4",
+        "text": "Ticket de Consumo",
+        "isCorrect": true
+      }
     ],
     "hint": "Se trata del ticket que permite a otros clientes empezar a utilizar la API.",
     "explanation": "El ticket de 'Consumo' es el paso necesario para formalizar que un cliente puede llamar a la API una vez que esta ha sido validada en el entorno de pruebas."
@@ -908,10 +1888,26 @@ export const initialBank: Question[] = [
     "questionText": "Culminado con la construccion del servicio ¿Que documento se debe realizar en el entorno de test con pruebas funcionales y no funcionales?",
     "type": "single",
     "options": [
-      { "id": "q74_o1", "text": "No se realizan pruebas", "isCorrect": false },
-      { "id": "q74_o2", "text": "C204", "isCorrect": false },
-      { "id": "q74_o3", "text": "T907", "isCorrect": true },
-      { "id": "q74_o4", "text": "MSA", "isCorrect": false }
+      {
+        "id": "q74_o1",
+        "text": "No se realizan pruebas",
+        "isCorrect": false
+      },
+      {
+        "id": "q74_o2",
+        "text": "C204",
+        "isCorrect": false
+      },
+      {
+        "id": "q74_o3",
+        "text": "T907",
+        "isCorrect": true
+      },
+      {
+        "id": "q74_o4",
+        "text": "MSA",
+        "isCorrect": false
+      }
     ],
     "hint": "Es un formulario técnico donde se registran las evidencias de las pruebas.",
     "explanation": "El formulario T907 es el documento estándar para registrar y certificar las pruebas técnicas realizadas sobre un servicio antes de su promoción."
@@ -921,10 +1917,26 @@ export const initialBank: Question[] = [
     "questionText": "Cual es la forma correcta para configurar el comportamiento de un metodo estatico",
     "type": "single",
     "options": [
-      { "id": "q75_o1", "text": "PowerMockito.when(MyUtils.someStaticMethod()).thenReturn('ABCD')", "isCorrect": true },
-      { "id": "q75_o2", "text": "Mockito.when(MyUtils.someStaticMethod()).thenReturn('ABCD')", "isCorrect": false },
-      { "id": "q75_o3", "text": "Mockito.verify(MyUtils).someStaticMethod('ABCD')", "isCorrect": false },
-      { "id": "q75_o4", "text": "PowerMockito.whenNew(MyUtils).someStaticMethod('ABCD')", "isCorrect": false }
+      {
+        "id": "q75_o1",
+        "text": "PowerMockito.when(MyUtils.someStaticMethod()).thenReturn('ABCD')",
+        "isCorrect": true
+      },
+      {
+        "id": "q75_o2",
+        "text": "Mockito.when(MyUtils.someStaticMethod()).thenReturn('ABCD')",
+        "isCorrect": false
+      },
+      {
+        "id": "q75_o3",
+        "text": "Mockito.verify(MyUtils).someStaticMethod('ABCD')",
+        "isCorrect": false
+      },
+      {
+        "id": "q75_o4",
+        "text": "PowerMockito.whenNew(MyUtils).someStaticMethod('ABCD')",
+        "isCorrect": false
+      }
     ],
     "hint": "Mockito estándar no puede mockear métodos estáticos; se requiere una extensión.",
     "explanation": "PowerMockito es la extensión de Mockito que permite manipular llamadas estáticas, constructores y métodos privados en las pruebas unitarias."
@@ -934,10 +1946,26 @@ export const initialBank: Question[] = [
     "questionText": "En un pase no exitoso ¿Cuál es el rol encargado de ejecutar el rollback desde consola ether?",
     "type": "single",
     "options": [
-      { "id": "q76_o1", "text": "Soporte N2 de banking Architecture", "isCorrect": true },
-      { "id": "q76_o2", "text": "Developer", "isCorrect": false },
-      { "id": "q76_o3", "text": "Release Manager", "isCorrect": false },
-      { "id": "q76_o4", "text": "Service Owner", "isCorrect": false }
+      {
+        "id": "q76_o1",
+        "text": "Soporte N2 de banking Architecture",
+        "isCorrect": true
+      },
+      {
+        "id": "q76_o2",
+        "text": "Developer",
+        "isCorrect": false
+      },
+      {
+        "id": "q76_o3",
+        "text": "Release Manager",
+        "isCorrect": false
+      },
+      {
+        "id": "q76_o4",
+        "text": "Service Owner",
+        "isCorrect": false
+      }
     ],
     "hint": "Identifica al equipo de soporte especializado en la infraestructura de la arquitectura.",
     "explanation": "En caso de fallo crítico en producción, el equipo de Soporte N2 de Arquitectura es quien tiene los permisos y la responsabilidad de ejecutar el rollback técnico."
@@ -947,10 +1975,26 @@ export const initialBank: Question[] = [
     "questionText": "Que serviceResponse permite devolver un codigo de estado HTTP 204?",
     "type": "single",
     "options": [
-      { "id": "q77_o1", "text": "ServiceResponseAccepted", "isCorrect": false },
-      { "id": "q77_o2", "text": "N/A", "isCorrect": true },
-      { "id": "q77_o3", "text": "ServiceResponseOk", "isCorrect": false },
-      { "id": "q77_o4", "text": "ServiceResponseCreated", "isCorrect": false }
+      {
+        "id": "q77_o1",
+        "text": "ServiceResponseAccepted",
+        "isCorrect": false
+      },
+      {
+        "id": "q77_o2",
+        "text": "N/A",
+        "isCorrect": true
+      },
+      {
+        "id": "q77_o3",
+        "text": "ServiceResponseOk",
+        "isCorrect": false
+      },
+      {
+        "id": "q77_o4",
+        "text": "ServiceResponseCreated",
+        "isCorrect": false
+      }
     ],
     "hint": "Considera si un código 'No Content' requiere una clase de respuesta con cuerpo.",
     "explanation": "Para devolver un 204 (No Content), generalmente no se utiliza una clase de ServiceResponse que espere un cuerpo, sino que se maneja a nivel de cabeceras o definición de método void."
@@ -960,10 +2004,26 @@ export const initialBank: Question[] = [
     "questionText": "Cual de los siguientes es un motivo valido para bloquear un ticket de construccion?",
     "type": "single",
     "options": [
-      { "id": "q78_o1", "text": "Pendiente de pruebas", "isCorrect": false },
-      { "id": "q78_o2", "text": "Error funcional de backend", "isCorrect": false },
-      { "id": "q78_o3", "text": "Pendiente de configuracion", "isCorrect": false },
-      { "id": "q78_o4", "text": "Pendiente de data de pruebas", "isCorrect": true }
+      {
+        "id": "q78_o1",
+        "text": "Pendiente de pruebas",
+        "isCorrect": false
+      },
+      {
+        "id": "q78_o2",
+        "text": "Error funcional de backend",
+        "isCorrect": false
+      },
+      {
+        "id": "q78_o3",
+        "text": "Pendiente de configuracion",
+        "isCorrect": false
+      },
+      {
+        "id": "q78_o4",
+        "text": "Pendiente de data de pruebas",
+        "isCorrect": true
+      }
     ],
     "hint": "Un bloqueo (blocker) es un impedimento externo que no permite avanzar con el desarrollo.",
     "explanation": "La falta de datos de prueba es un motivo válido de bloqueo ya que impide al desarrollador verificar su código en un entorno real."
@@ -973,10 +2033,26 @@ export const initialBank: Question[] = [
     "questionText": "Para servicios Nuevos Globales/Multilocales ¿Cuales son los tickets Jira 2.0 que aplican?",
     "type": "multiple",
     "options": [
-      { "id": "q79_o1", "text": "ASO Release 2.0 - ASO Consume Service", "isCorrect": true },
-      { "id": "q79_o2", "text": "Solo Ticket ASO Release 2.0", "isCorrect": false },
-      { "id": "q79_o3", "text": "Solo Ticket ASO Consume Service", "isCorrect": false },
-      { "id": "q79_o4", "text": "ASO Construction - New Request - ASO Consume Service", "isCorrect": false }
+      {
+        "id": "q79_o1",
+        "text": "ASO Release 2.0 - ASO Consume Service",
+        "isCorrect": true
+      },
+      {
+        "id": "q79_o2",
+        "text": "Solo Ticket ASO Release 2.0",
+        "isCorrect": false
+      },
+      {
+        "id": "q79_o3",
+        "text": "Solo Ticket ASO Consume Service",
+        "isCorrect": false
+      },
+      {
+        "id": "q79_o4",
+        "text": "ASO Construction - New Request - ASO Consume Service",
+        "isCorrect": false
+      }
     ],
     "hint": "Estos servicios siguen el flujo completo de vida de ASO 2.0.",
     "explanation": "Los servicios globales nuevos requieren tanto el ticket de seguimiento de release como el de consumo para habilitar a las aplicaciones clientes."
@@ -986,10 +2062,26 @@ export const initialBank: Question[] = [
     "questionText": "¿En que etapa se debe crear el ticket Release 2.0?",
     "type": "single",
     "options": [
-      { "id": "q80_o1", "text": "Todos", "isCorrect": false },
-      { "id": "q80_o2", "text": "Al iniciar la ventana de pruebas en calidad", "isCorrect": true },
-      { "id": "q80_o3", "text": "al iniciar las pruebas en test", "isCorrect": false },
-      { "id": "q80_o4", "text": "Despues de pasar a comite", "isCorrect": false }
+      {
+        "id": "q80_o1",
+        "text": "Todos",
+        "isCorrect": false
+      },
+      {
+        "id": "q80_o2",
+        "text": "Al iniciar la ventana de pruebas en calidad",
+        "isCorrect": true
+      },
+      {
+        "id": "q80_o3",
+        "text": "al iniciar las pruebas en test",
+        "isCorrect": false
+      },
+      {
+        "id": "q80_o4",
+        "text": "Despues de pasar a comite",
+        "isCorrect": false
+      }
     ],
     "hint": "Este ticket sirve para coordinar la fase final hacia producción.",
     "explanation": "El ticket de Release 2.0 se crea cuando el desarrollo entra en su fase de certificación de calidad para preparar el camino al despliegue final."
@@ -999,8 +2091,16 @@ export const initialBank: Question[] = [
     "questionText": "¿El manejo de union type se soporta por una jeraquia de herencia",
     "type": "single",
     "options": [
-      { "id": "q81_o1", "text": "true", "isCorrect": true },
-      { "id": "q81_o2", "text": "false", "isCorrect": false }
+      {
+        "id": "q81_o1",
+        "text": "true",
+        "isCorrect": true
+      },
+      {
+        "id": "q81_o2",
+        "text": "false",
+        "isCorrect": false
+      }
     ],
     "hint": "Considera cómo se representan múltiples tipos posibles bajo un mismo campo en Java.",
     "explanation": "Verdadero. En el diseño de modelos ASO, los Union Types se suelen implementar mediante una clase base y múltiples subclases que heredan de ella."
@@ -1010,10 +2110,26 @@ export const initialBank: Question[] = [
     "questionText": "¿Que se debe realizar si algun aplicativo no responde durante la ventana de pase a produccion?",
     "type": "single",
     "options": [
-      { "id": "q82_o1", "text": "Esperar el dia siguiente para que se realice las pruebas", "isCorrect": false },
-      { "id": "q82_o2", "text": "Pasar un email para que atienda la ventana", "isCorrect": false },
-      { "id": "q82_o3", "text": "No se realiza nada y se cierra el pase de forma exitosa", "isCorrect": false },
-      { "id": "q82_o4", "text": "Llamar a frente único Producción para que los contacten", "isCorrect": true }
+      {
+        "id": "q82_o1",
+        "text": "Esperar el dia siguiente para que se realice las pruebas",
+        "isCorrect": false
+      },
+      {
+        "id": "q82_o2",
+        "text": "Pasar un email para que atienda la ventana",
+        "isCorrect": false
+      },
+      {
+        "id": "q82_o3",
+        "text": "No se realiza nada y se cierra el pase de forma exitosa",
+        "isCorrect": false
+      },
+      {
+        "id": "q82_o4",
+        "text": "Llamar a frente único Producción para que los contacten",
+        "isCorrect": true
+      }
     ],
     "hint": "Busca el canal de comunicación de emergencia para incidentes en vivo.",
     "explanation": "Durante una ventana crítica, el canal oficial es 'Frente Único de Producción' para movilizar a los responsables de forma inmediata."
@@ -1023,12 +2139,858 @@ export const initialBank: Question[] = [
     "questionText": "Durante un pase a produccion ¿A que hora aprox se comparte la lista de artefactos en LO?",
     "type": "single",
     "options": [
-      { "id": "q83_o1", "text": "6:45 pm", "isCorrect": true },
-      { "id": "q83_o2", "text": "5:00 pm", "isCorrect": false },
-      { "id": "q83_o3", "text": "6:00 pm", "isCorrect": false },
-      { "id": "q83_o4", "text": "7:45 pm", "isCorrect": false }
+      {
+        "id": "q83_o1",
+        "text": "6:45 pm",
+        "isCorrect": true
+      },
+      {
+        "id": "q83_o2",
+        "text": "5:00 pm",
+        "isCorrect": false
+      },
+      {
+        "id": "q83_o3",
+        "text": "6:00 pm",
+        "isCorrect": false
+      },
+      {
+        "id": "q83_o4",
+        "text": "7:45 pm",
+        "isCorrect": false
+      }
     ],
     "hint": "Es al final de la jornada laboral, justo antes del inicio de las actividades de despliegue nocturno.",
     "explanation": "Es una práctica común compartir la lista final de componentes a las 6:45 pm para asegurar que todos los involucrados tengan la última versión antes del corte."
+  },
+  {
+    "id": "q84",
+    "questionText": "¿Cuál de las siguientes URIs aplica correctamente el patrón Controller?",
+    "type": "single",
+    "options": [
+      {
+        "id": "q84_o1",
+        "text": "PUT /cards/{card-id}/activate",
+        "isCorrect": false
+      },
+      {
+        "id": "q84_o2",
+        "text": "POST /cards/{card-id}/activate",
+        "isCorrect": true
+      },
+      {
+        "id": "q84_o3",
+        "text": "GET /cards/{card-id}/activate",
+        "isCorrect": false
+      },
+      {
+        "id": "q84_o4",
+        "text": "POST /cards/activate/{card-id}",
+        "isCorrect": false
+      }
+    ],
+    "hint": "Recuerda: el controller siempre usa POST y el nombre de la acción va al final del URI.",
+    "explanation": "El patrón Controller debe usar el método POST y el verbo que describe la acción (en forma de sustantivo) debe ser el último segmento del URI, después del identificador del recurso padre."
+  },
+  {
+    "id": "q85",
+    "questionText": "Negocio requiere un endpoint para buscar clientes aplicando múltiples filtros combinados: nombre, estado, rango de fechas y tipo de producto. ¿Cuál es el diseño más adecuado?",
+    "type": "single",
+    "options": [
+      {
+        "id": "q85_o1",
+        "text": "GET /customers?name=Juan&status=ACTIVE&dateFrom=2024-01-01&dateTo=2024-12-31&productType=CREDIT",
+        "isCorrect": false
+      },
+      {
+        "id": "q85_o2",
+        "text": "POST /customers/search con los filtros en el body",
+        "isCorrect": true
+      },
+      {
+        "id": "q85_o3",
+        "text": "POST /customers con los filtros en el body",
+        "isCorrect": false
+      },
+      {
+        "id": "q85_o4",
+        "text": "GET /customers/search con los filtros como path params",
+        "isCorrect": false
+      }
+    ],
+    "hint": "Cuando los filtros son demasiados o complejos para la URL, existe un patrón específico de búsqueda.",
+    "explanation": "El patrón Search (POST /recurso/search) se usa cuando los criterios de búsqueda son demasiado complejos o numerosos para expresarse como query params en un GET. El body contiene los filtros y el servidor retorna 200 OK con los resultados, sin crear ningún recurso."
+  },
+  {
+    "id": "q86",
+    "questionText": "¿Cuál es el código de respuesta HTTP correcto para un endpoint que implementa el patrón Search?",
+    "type": "single",
+    "options": [
+      {
+        "id": "q86_o1",
+        "text": "201 Created",
+        "isCorrect": false
+      },
+      {
+        "id": "q86_o2",
+        "text": "204 No Content",
+        "isCorrect": false
+      },
+      {
+        "id": "q86_o3",
+        "text": "200 OK",
+        "isCorrect": true
+      },
+      {
+        "id": "q86_o4",
+        "text": "202 Accepted",
+        "isCorrect": false
+      }
+    ],
+    "hint": "El patrón Search no crea recursos, solo consulta.",
+    "explanation": "Aunque el patrón Search usa el método POST, su propósito es consultar y no crear recursos. Por ello retorna 200 OK (igual que un GET de lista) y nunca 201 Created, que se reserva para la creación de nuevos recursos."
+  },
+  {
+    "id": "q87",
+    "questionText": "Selecciona las afirmaciones correctas sobre el patrón Search (elige 2)",
+    "type": "multiple",
+    "options": [
+      {
+        "id": "q87_o1",
+        "text": "Usa el método POST porque los criterios de búsqueda van en el body",
+        "isCorrect": true
+      },
+      {
+        "id": "q87_o2",
+        "text": "Crea un nuevo recurso de tipo búsqueda en el servidor",
+        "isCorrect": false
+      },
+      {
+        "id": "q87_o3",
+        "text": "Puede soportar paginación en la respuesta",
+        "isCorrect": true
+      },
+      {
+        "id": "q87_o4",
+        "text": "Se debe usar siempre que se necesite un GET con filtros, sin importar la cantidad",
+        "isCorrect": false
+      }
+    ],
+    "hint": "El patrón Search es una alternativa a GET con query params cuando los filtros son complejos, no un reemplazo universal.",
+    "explanation": "El patrón Search usa POST para poder enviar filtros complejos en el body y puede devolver resultados paginados igual que un GET de colección. Sin embargo, NO crea recursos y NO debe usarse para reemplazar todos los GETs con filtros simples."
+  },
+  {
+    "id": "q88",
+    "questionText": "En un test unitario con Mockito, ¿cuál es la forma correcta de verificar que el método save() del repositorio fue llamado exactamente una vez?",
+    "type": "single",
+    "options": [
+      {
+        "id": "q88_o1",
+        "text": "when(repository.save(any())).thenReturn(1)",
+        "isCorrect": false
+      },
+      {
+        "id": "q88_o2",
+        "text": "verify(repository, times(1)).save(any())",
+        "isCorrect": true
+      },
+      {
+        "id": "q88_o3",
+        "text": "assert(repository.save()).equals(1)",
+        "isCorrect": false
+      },
+      {
+        "id": "q88_o4",
+        "text": "verify(repository).called(1)",
+        "isCorrect": false
+      }
+    ],
+    "hint": "Mockito tiene un método específico para verificar interacciones con mocks.",
+    "explanation": "verify() es el método de Mockito para comprobar que un método de un mock fue invocado. times(1) especifica el número exacto de invocaciones esperadas. Si no se pasa times(), por defecto verifica times(1)."
+  },
+  {
+    "id": "q89",
+    "questionText": "Se tiene la clase CustomerService que depende de CustomerRepository. ¿Cuáles anotaciones son correctas para configurar el test unitario con Mockito? (elige 2)",
+    "type": "multiple",
+    "options": [
+      {
+        "id": "q89_o1",
+        "text": "@Mock sobre CustomerRepository",
+        "isCorrect": true
+      },
+      {
+        "id": "q89_o2",
+        "text": "@InjectMocks sobre CustomerService",
+        "isCorrect": true
+      },
+      {
+        "id": "q89_o3",
+        "text": "@Mock sobre CustomerService",
+        "isCorrect": false
+      },
+      {
+        "id": "q89_o4",
+        "text": "@InjectMocks sobre CustomerRepository",
+        "isCorrect": false
+      }
+    ],
+    "hint": "Una anotación crea el falso, la otra inyecta los falsos en la clase que se quiere probar.",
+    "explanation": "@Mock crea un objeto falso de la dependencia (CustomerRepository). @InjectMocks crea la instancia real de la clase bajo prueba (CustomerService) e inyecta automáticamente todos los mocks declarados en la clase de test."
+  },
+  {
+    "id": "q90",
+    "questionText": "¿Cuál es la diferencia entre el patrón Controller y el patrón Simulation en el diseño de APIs?",
+    "type": "single",
+    "options": [
+      {
+        "id": "q90_o1",
+        "text": "Controller usa GET y Simulation usa POST",
+        "isCorrect": false
+      },
+      {
+        "id": "q90_o2",
+        "text": "Controller ejecuta y persiste la operación; Simulation calcula el resultado potencial sin persistir",
+        "isCorrect": true
+      },
+      {
+        "id": "q90_o3",
+        "text": "Ambos persisten datos pero en diferentes bases de datos",
+        "isCorrect": false
+      },
+      {
+        "id": "q90_o4",
+        "text": "Controller es para operaciones de lectura y Simulation para escritura",
+        "isCorrect": false
+      }
+    ],
+    "hint": "Piensa en qué pasa con los datos después de ejecutar cada patrón.",
+    "explanation": "El patrón Controller ejecuta una acción de negocio que genera efectos persistentes (activa una tarjeta, cancela una transferencia). El patrón Simulation calcula o proyecta el resultado de una operación sin generar ningún efecto en los datos, útil para cotizaciones o proyecciones."
+  },
+  {
+    "id": "q91",
+    "questionText": "¿Cuál es el tipo de ticket para solicitar configuraciones como headers, alta de apx, propiedades, firewall?",
+    "type": "single",
+    "options": [
+      {
+        "id": "q91_o1",
+        "text": "Tipo Construcción",
+        "isCorrect": false
+      },
+      {
+        "id": "q91_o2",
+        "text": "Tipo Aso Consumo",
+        "isCorrect": false
+      },
+      {
+        "id": "q91_o3",
+        "text": "Tipo Dependency",
+        "isCorrect": true
+      },
+      {
+        "id": "q91_o4",
+        "text": "Tipo Release Aso",
+        "isCorrect": false
+      }
+    ],
+    "hint": "Este tipo de ticket gestiona dependencias externas necesarias para el funcionamiento del servicio.",
+    "explanation": "El ticket de tipo Dependency es el que se usa para solicitar configuraciones de infraestructura como headers, alta de APX, propiedades y reglas de firewall que el servicio necesita para funcionar correctamente."
+  },
+  {
+    "id": "q92",
+    "questionText": "¿Cuál es el tipo de ticket para solicitar configuraciones de IMC, KFUL, LUX?",
+    "type": "single",
+    "options": [
+      {
+        "id": "q92_o1",
+        "text": "Tipo Release ASO",
+        "isCorrect": false
+      },
+      {
+        "id": "q92_o2",
+        "text": "Tipo Dependency",
+        "isCorrect": false
+      },
+      {
+        "id": "q92_o3",
+        "text": "Tipo Construcción",
+        "isCorrect": false
+      },
+      {
+        "id": "q92_o4",
+        "text": "Tipo Aso Consumo",
+        "isCorrect": true
+      }
+    ],
+    "hint": "IMC, KFUL y LUX son plataformas internas que requieren un ticket de consumo para su configuración.",
+    "explanation": "El ticket de tipo ASO Consumo es el adecuado para solicitar configuraciones relacionadas con plataformas internas como IMC, KFUL y LUX, ya que implican el consumo o integración con esos servicios."
+  },
+  {
+    "id": "q93",
+    "questionText": "¿A quién deberíamos solicitar data de prueba para las validaciones en BRUNO de los servicios ya implementados?",
+    "type": "multiple",
+    "options": [
+      {
+        "id": "q93_o1",
+        "text": "Release Manager",
+        "isCorrect": false
+      },
+      {
+        "id": "q93_o2",
+        "text": "Líder Técnico",
+        "isCorrect": true
+      },
+      {
+        "id": "q93_o3",
+        "text": "Scrum Master",
+        "isCorrect": true
+      },
+      {
+        "id": "q93_o4",
+        "text": "Equipo de Seguridad",
+        "isCorrect": false
+      }
+    ],
+    "hint": "La data de prueba la gestionan quienes tienen visibilidad del negocio y del equipo de desarrollo.",
+    "explanation": "La data de prueba para validaciones en BRUNO debe solicitarse al Líder Técnico y al Scrum Master, ya que son quienes tienen el contexto técnico y de negocio para proveer o gestionar los datos necesarios para las pruebas."
+  },
+  {
+    "id": "q94",
+    "questionText": "¿Qué equipo se encarga de atender las subtareas de Security y Catalog?",
+    "type": "single",
+    "options": [
+      {
+        "id": "q94_o1",
+        "text": "Equipo de gobierno local de APIs",
+        "isCorrect": false
+      },
+      {
+        "id": "q94_o2",
+        "text": "Equipo de Scrum Master",
+        "isCorrect": false
+      },
+      {
+        "id": "q94_o3",
+        "text": "Equipo de Seguridad Local",
+        "isCorrect": true
+      },
+      {
+        "id": "q94_o4",
+        "text": "Equipo de Gestión de Cambios",
+        "isCorrect": false
+      }
+    ],
+    "hint": "Las subtareas de seguridad y catálogo son responsabilidad del equipo especializado en seguridad.",
+    "explanation": "El Equipo de Seguridad Local es el responsable de atender las subtareas de Security y Catalog dentro del flujo de tickets, validando que el servicio cumpla con los controles de seguridad y esté correctamente catalogado."
+  },
+  {
+    "id": "q95",
+    "questionText": "¿Quién se encarga de aceptar nuestro PR y cerrar la subtarea (integrating) del ticket de construcción?",
+    "type": "single",
+    "options": [
+      {
+        "id": "q95_o1",
+        "text": "Release Manager",
+        "isCorrect": true
+      },
+      {
+        "id": "q95_o2",
+        "text": "Scrum Master",
+        "isCorrect": false
+      },
+      {
+        "id": "q95_o3",
+        "text": "ASO Developer",
+        "isCorrect": false
+      },
+      {
+        "id": "q95_o4",
+        "text": "Product Owner",
+        "isCorrect": false
+      }
+    ],
+    "hint": "Es el rol responsable de la gestión de ramas e integración del código.",
+    "explanation": "El Release Manager es quien tiene el rol de revisar y aceptar los Pull Requests, y es responsable de cerrar la subtarea de integrating una vez que el código ha sido integrado correctamente en la rama correspondiente."
+  },
+  {
+    "id": "q96",
+    "questionText": "¿Cuando terminamos nuestra implementación y estamos en la etapa in-progress del ticket de diseño, podemos cerrarlo manualmente?",
+    "type": "single",
+    "options": [
+      {
+        "id": "q96_o1",
+        "text": "Sí",
+        "isCorrect": false
+      },
+      {
+        "id": "q96_o2",
+        "text": "No",
+        "isCorrect": true
+      }
+    ],
+    "hint": "Los tickets tienen un flujo controlado; no todos los estados pueden cambiarse manualmente.",
+    "explanation": "No se debe cerrar el ticket de diseño manualmente cuando está en in-progress. El ticket sigue un flujo definido y su cierre depende de que se cumplan las condiciones y validaciones establecidas en el proceso, no de una acción manual del desarrollador."
+  },
+  {
+    "id": "q97",
+    "questionText": "¿Qué consideraciones importantes deberíamos tener para generar un ticket de ASO Consumo?",
+    "type": "single",
+    "options": [
+      {
+        "id": "q97_o1",
+        "text": "Metadata o SMC, Descripción del proyecto",
+        "isCorrect": false
+      },
+      {
+        "id": "q97_o2",
+        "text": "Volumetrías, Service Owner, Metadata o SMC y descripciones del proyecto",
+        "isCorrect": true
+      },
+      {
+        "id": "q97_o3",
+        "text": "Ticket de construcción, Product Owner, Scrum Master",
+        "isCorrect": false
+      },
+      {
+        "id": "q97_o4",
+        "text": "No es necesario ninguna consideración, solo crear el ticket",
+        "isCorrect": false
+      }
+    ],
+    "hint": "El ticket de consumo requiere información completa sobre quién consume el servicio y con qué volumen.",
+    "explanation": "Para generar un ticket de ASO Consumo se deben considerar las volumetrías (estimación de llamadas), el Service Owner, la Metadata o SMC del servicio y las descripciones del proyecto, ya que toda esta información es necesaria para que el equipo de plataforma pueda procesar la solicitud correctamente."
+  },
+  {
+    "id": "q98",
+    "questionText": "¿El ticket de consumo podemos mover los estados manualmente para que continúe la atención?",
+    "type": "single",
+    "options": [
+      {
+        "id": "q98_o1",
+        "text": "Sí",
+        "isCorrect": false
+      },
+      {
+        "id": "q98_o2",
+        "text": "No",
+        "isCorrect": true
+      }
+    ],
+    "hint": "Al igual que otros tickets del flujo, los estados son controlados por el proceso.",
+    "explanation": "El ticket de consumo no puede moverse de estado manualmente. Los estados son gestionados por los equipos responsables de cada etapa según el flujo establecido, y moverlos manualmente podría saltarse validaciones críticas."
+  },
+  {
+    "id": "q99",
+    "questionText": "¿Qué subtarea del ticket de consumo se encarga de registrar nuestro servicio en el inventario de gestión de Servicios de Perú?",
+    "type": "single",
+    "options": [
+      {
+        "id": "q99_o1",
+        "text": "[Validation] - Owner",
+        "isCorrect": false
+      },
+      {
+        "id": "q99_o2",
+        "text": "[Validation] - Security",
+        "isCorrect": false
+      },
+      {
+        "id": "q99_o3",
+        "text": "[Validation] - ASO",
+        "isCorrect": true
+      },
+      {
+        "id": "q99_o4",
+        "text": "[PRE] - Catalog",
+        "isCorrect": false
+      }
+    ],
+    "hint": "Es la subtarea de validación que compete directamente a la plataforma ASO.",
+    "explanation": "La subtarea [Validation] - ASO es la responsable de registrar el servicio en el inventario de gestión de Servicios de Perú, asegurando que el servicio quede oficialmente registrado en la plataforma ASO del país."
+  },
+  {
+    "id": "q100",
+    "questionText": "¿Qué subtarea del ticket de consumo se encarga de realizar la catalogación del servicio?",
+    "type": "single",
+    "options": [
+      {
+        "id": "q100_o1",
+        "text": "[PRE] - Catalog",
+        "isCorrect": true
+      },
+      {
+        "id": "q100_o2",
+        "text": "[Validation] - ASO",
+        "isCorrect": false
+      },
+      {
+        "id": "q100_o3",
+        "text": "[Validation] - Security",
+        "isCorrect": false
+      },
+      {
+        "id": "q100_o4",
+        "text": "[Validation] - Owner",
+        "isCorrect": false
+      }
+    ],
+    "hint": "La catalogación es una tarea de preparación (PRE) antes del despliegue.",
+    "explanation": "La subtarea [PRE] - Catalog es la encargada de realizar la catalogación del servicio, es decir, registrar y documentar el servicio en el catálogo oficial para que sea visible y consumible por otros equipos."
+  },
+  {
+    "id": "q101",
+    "questionText": "¿Podemos desplegar una rama feature en entorno calidad?",
+    "type": "single",
+    "options": [
+      {
+        "id": "q101_o1",
+        "text": "Sí",
+        "isCorrect": false
+      },
+      {
+        "id": "q101_o2",
+        "text": "No",
+        "isCorrect": true
+      }
+    ],
+    "hint": "El entorno de calidad tiene restricciones sobre qué ramas pueden desplegarse.",
+    "explanation": "No se puede desplegar una rama feature directamente en el entorno de calidad. Las ramas feature son para desarrollo local; en calidad solo se despliegan ramas de integración o release que ya han pasado por el proceso de revisión y merge correspondiente."
+  },
+  {
+    "id": "q102",
+    "questionText": "¿Qué días está habilitada la ventana de pruebas de no impacto en calidad?",
+    "type": "single",
+    "options": [
+      {
+        "id": "q102_o1",
+        "text": "Lunes, Miércoles, Viernes",
+        "isCorrect": false
+      },
+      {
+        "id": "q102_o2",
+        "text": "Martes, Viernes",
+        "isCorrect": false
+      },
+      {
+        "id": "q102_o3",
+        "text": "Lunes, Martes, Jueves",
+        "isCorrect": false
+      },
+      {
+        "id": "q102_o4",
+        "text": "Cualquier día de la semana en horario laboral",
+        "isCorrect": true
+      }
+    ],
+    "hint": "Para ventana de CALIDAD puede ser cualquier día hábil en horario laboral. Para ventana de PRODUCCIÓN, revisar el horario definido en el Excel de ventanas.",
+    "explanation": "La ventana de pruebas de no impacto en el entorno de calidad está disponible cualquier día de la semana dentro del horario laboral. Esto es diferente a las ventanas de producción (LO/PROD), que tienen días y horarios específicos definidos en el Excel de planificación de ventanas."
+  },
+  {
+    "id": "q103",
+    "questionText": "¿Para atender un servicio de Reuso que requiere configuración de Crypto, qué tickets deberíamos considerar crear?",
+    "type": "single",
+    "options": [
+      {
+        "id": "q103_o1",
+        "text": "Ticket construcción, Ticket de consumo, Ticket release",
+        "isCorrect": false
+      },
+      {
+        "id": "q103_o2",
+        "text": "Ticket de consumo",
+        "isCorrect": false
+      },
+      {
+        "id": "q103_o3",
+        "text": "Ticket de diseño, ticket de construcción, ticket de consumo, ticket release",
+        "isCorrect": false
+      },
+      {
+        "id": "q103_o4",
+        "text": "Ticket de construcción, ticket de consumo",
+        "isCorrect": true
+      }
+    ],
+    "hint": "Un servicio de reuso no requiere diseño desde cero, pero sí construcción y el consumo para la configuración de Crypto.",
+    "explanation": "Para un servicio de Reuso que requiere configuración de Crypto se deben crear el ticket de Construcción (para implementar los cambios) y el ticket de Consumo (para gestionar la configuración de Crypto). No se requiere ticket de diseño porque es un reuso, ni ticket release por separado en este caso."
+  },
+  {
+    "id": "q104",
+    "questionText": "¿Cuándo se debería generar el ticket Deployment?",
+    "type": "single",
+    "options": [
+      {
+        "id": "q104_o1",
+        "text": "Al terminar la construcción del servicio ASO",
+        "isCorrect": false
+      },
+      {
+        "id": "q104_o2",
+        "text": "Al desplegar el componente en Calidad",
+        "isCorrect": false
+      },
+      {
+        "id": "q104_o3",
+        "text": "Una vez finalizada la ventana de no impacto y preparación para el pase a producción",
+        "isCorrect": true
+      },
+      {
+        "id": "q104_o4",
+        "text": "Cuando nos solicitan ventana de no impacto",
+        "isCorrect": false
+      }
+    ],
+    "hint": "El Deployment está ligado al pase productivo, no a etapas de desarrollo o calidad.",
+    "explanation": "El ticket Deployment se genera una vez finalizada la ventana de no impacto en calidad y cuando el equipo está en la etapa de preparación para el pase a producción. Es el ticket que formaliza el proceso de despliegue en entornos productivos."
+  },
+  {
+    "id": "q105",
+    "questionText": "¿Cuáles son las subtareas que debería tener mi ticket Deployment?",
+    "type": "single",
+    "options": [
+      {
+        "id": "q105_o1",
+        "text": "QA Vbo, PO Review",
+        "isCorrect": false
+      },
+      {
+        "id": "q105_o2",
+        "text": "QE Review, [ASO] - Vbo de Arquitectura Local",
+        "isCorrect": true
+      },
+      {
+        "id": "q105_o3",
+        "text": "[ASO] - Vbo de Arquitectura Local, PO Review",
+        "isCorrect": false
+      },
+      {
+        "id": "q105_o4",
+        "text": "Designing Security, QE Review",
+        "isCorrect": false
+      }
+    ],
+    "hint": "El Deployment requiere revisión de calidad y visto bueno de arquitectura.",
+    "explanation": "El ticket Deployment debe contener las subtareas QE Review (revisión por parte del equipo de Quality Engineering) y [ASO] - Vbo de Arquitectura Local (visto bueno del equipo de arquitectura ASO local), que son los dos controles necesarios para autorizar el pase a producción."
+  },
+  {
+    "id": "q106",
+    "questionText": "¿Quién debe crear el ticket Deployment de GDC para el pase a producción?",
+    "type": "multiple",
+    "options": [
+      {
+        "id": "q106_o1",
+        "text": "ASO Developer",
+        "isCorrect": false
+      },
+      {
+        "id": "q106_o2",
+        "text": "Scrum Master",
+        "isCorrect": true
+      },
+      {
+        "id": "q106_o3",
+        "text": "QA Tester",
+        "isCorrect": false
+      },
+      {
+        "id": "q106_o4",
+        "text": "Cualquier integrante del proyecto que no sea cuenta contractor",
+        "isCorrect": true
+      }
+    ],
+    "hint": "Hay restricción sobre cuentas contractor para la creación de este ticket.",
+    "explanation": "El ticket Deployment de GDC puede ser creado por el Scrum Master o por cualquier integrante del proyecto que no tenga cuenta de tipo contractor, ya que las cuentas contractor tienen restricciones para crear ciertos tipos de tickets en GDC."
+  },
+  {
+    "id": "q107",
+    "questionText": "¿Qué documentos debemos tener en cuenta después de la creación del ticket Release GDC?",
+    "type": "single",
+    "options": [
+      {
+        "id": "q107_o1",
+        "text": "Matriz de escalamiento, P110, formato de configuraciones",
+        "isCorrect": false
+      },
+      {
+        "id": "q107_o2",
+        "text": "P110, Matriz de escalamiento, plan de retorno, ventana de no impacto (calidad), checklist change lead para pases productivos",
+        "isCorrect": true
+      },
+      {
+        "id": "q107_o3",
+        "text": "Ventana de no impacto (calidad), plan de retorno, P110",
+        "isCorrect": false
+      },
+      {
+        "id": "q107_o4",
+        "text": "T907, P110, plan de retorno",
+        "isCorrect": false
+      }
+    ],
+    "hint": "Son varios documentos que cubren aspectos de planificación, contingencia y aprobación.",
+    "explanation": "Después de crear el ticket Release GDC se deben gestionar: el P110, la Matriz de escalamiento, el Plan de retorno, la Ventana de no impacto de calidad y el Checklist change lead para pases productivos. Todos estos son necesarios para garantizar un pase a producción ordenado y con cobertura ante imprevistos."
+  },
+  {
+    "id": "q108",
+    "questionText": "¿Quiénes son los encargados de autorizar los componentes productivos una vez programados?",
+    "type": "single",
+    "options": [
+      {
+        "id": "q108_o1",
+        "text": "ASO developer, Diseñador, Líder Técnico",
+        "isCorrect": false
+      },
+      {
+        "id": "q108_o2",
+        "text": "ASO developer, Release Manager, Gestión de cambios",
+        "isCorrect": true
+      },
+      {
+        "id": "q108_o3",
+        "text": "Líder técnico, Scrum Master, Gestión de cambios",
+        "isCorrect": false
+      },
+      {
+        "id": "q108_o4",
+        "text": "Automático: se programa y despliega el componente",
+        "isCorrect": false
+      }
+    ],
+    "hint": "La autorización involucra al desarrollador, quien gestiona la integración y el equipo de cambios.",
+    "explanation": "Los componentes productivos deben ser autorizados por el ASO Developer (quien conoce el componente), el Release Manager (quien gestiona la integración y el despliegue) y el equipo de Gestión de cambios (quien aprueba formalmente el cambio en producción)."
+  },
+  {
+    "id": "q109",
+    "questionText": "¿Cuántos CRQs se deben crear para producción?",
+    "type": "single",
+    "options": [
+      {
+        "id": "q109_o1",
+        "text": "Se crean dos CRQs, uno para LO y otro para PROD",
+        "isCorrect": false
+      },
+      {
+        "id": "q109_o2",
+        "text": "Solo se crea un CRQ LO+PROD juntos",
+        "isCorrect": true
+      }
+    ],
+    "hint": "LO y PROD comparten el mismo CRQ en el proceso de pase.",
+    "explanation": "Solo se crea un único CRQ que cubre tanto el entorno de Liga Oculta (LO) como Producción (PROD) de forma conjunta. No se crean CRQs separados para cada entorno."
+  },
+  {
+    "id": "q110",
+    "questionText": "¿En qué estado deben estar los CRQs ya autorizados por todas las partes para producción?",
+    "type": "single",
+    "options": [
+      {
+        "id": "q110_o1",
+        "text": "Implantación en curso",
+        "isCorrect": true
+      },
+      {
+        "id": "q110_o2",
+        "text": "Pendiente de autorizar",
+        "isCorrect": false
+      },
+      {
+        "id": "q110_o3",
+        "text": "Programado",
+        "isCorrect": false
+      },
+      {
+        "id": "q110_o4",
+        "text": "N/A",
+        "isCorrect": false
+      }
+    ],
+    "hint": "Una vez autorizados, el CRQ pasa al estado que indica que está siendo ejecutado.",
+    "explanation": "Una vez que el CRQ ha sido autorizado por todas las partes involucradas, debe encontrarse en estado \"Implantación en curso\", lo que indica que el proceso de despliegue en producción está activo y en ejecución."
+  },
+  {
+    "id": "q111",
+    "questionText": "¿Qué consideración se debe tener en cuenta para solicitar cualquier aprobación al equipo de GDC?",
+    "type": "single",
+    "options": [
+      {
+        "id": "q111_o1",
+        "text": "Solo enviar correo solicitando autorización",
+        "isCorrect": false
+      },
+      {
+        "id": "q111_o2",
+        "text": "Cambiar de estado al CRQ",
+        "isCorrect": false
+      },
+      {
+        "id": "q111_o3",
+        "text": "Enviar correo con dos días de anticipación",
+        "isCorrect": true
+      },
+      {
+        "id": "q111_o4",
+        "text": "N/A",
+        "isCorrect": false
+      }
+    ],
+    "hint": "El equipo de GDC necesita tiempo previo para revisar y autorizar.",
+    "explanation": "Para solicitar cualquier aprobación al equipo de GDC se debe enviar el correo de solicitud con dos días de anticipación. Esto permite que el equipo tenga el tiempo suficiente para revisar la documentación y otorgar la autorización antes de la ventana programada."
+  },
+  {
+    "id": "q112",
+    "questionText": "¿En qué horario empiezan las ventanas de entorno LO y Producción?",
+    "type": "single",
+    "options": [
+      {
+        "id": "q112_o1",
+        "text": "6pm y 12am",
+        "isCorrect": false
+      },
+      {
+        "id": "q112_o2",
+        "text": "7pm y 11pm",
+        "isCorrect": true
+      },
+      {
+        "id": "q112_o3",
+        "text": "5pm y 7pm",
+        "isCorrect": false
+      },
+      {
+        "id": "q112_o4",
+        "text": "En cualquier hora",
+        "isCorrect": false
+      }
+    ],
+    "hint": "LO inicia en horario nocturno temprano y Producción más entrada la noche.",
+    "explanation": "La ventana del entorno de Liga Oculta (LO) comienza a las 7pm y la ventana de Producción comienza a las 11pm. Estos horarios están definidos para minimizar el impacto en los usuarios durante las horas de menor tráfico."
+  },
+  {
+    "id": "q113",
+    "questionText": "¿Después de las pruebas en producción, qué documentos se deberían rellenar y enviar a FUP?",
+    "type": "single",
+    "options": [
+      {
+        "id": "q113_o1",
+        "text": "Validación de ventana no impacto [Producción] y Validación métricas",
+        "isCorrect": true
+      },
+      {
+        "id": "q113_o2",
+        "text": "CheckList, P110",
+        "isCorrect": false
+      },
+      {
+        "id": "q113_o3",
+        "text": "T907 y C204",
+        "isCorrect": false
+      },
+      {
+        "id": "q113_o4",
+        "text": "Otros",
+        "isCorrect": false
+      }
+    ],
+    "hint": "Son dos documentos: uno de validación de la ventana y otro de métricas del servicio.",
+    "explanation": "Después de completar las pruebas en producción se deben completar y enviar a FUP dos documentos: la Validación de ventana de no impacto [Producción] (que certifica que el pase se realizó sin afectar a los usuarios) y la Validación de métricas (que confirma que el servicio opera correctamente con las métricas esperadas)."
   }
 ];
