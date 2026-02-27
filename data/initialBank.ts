@@ -834,21 +834,21 @@ export const initialBank: Question[] =
     "hint": "Rapidez y eficiencia.",
     "explanation": "El cifrado simétrico es más eficiente para grandes volúmenes de datos, ya que utiliza una sola clave y tiene menor costo computacional."
   },
-  {
-    "id": "q65",
-    "questionText": "En la técnica de modelado de amenazas STRIDE, ¿cuál opción pertenece al modelo?",
-    "type": "single",
-    "options": [
-      { "id": "q65_o1", "text": "Tampering.", "isCorrect": true },
-      { "id": "q65_o2", "text": "Information destruction.", "isCorrect": false },
-      { "id": "q65_o3", "text": "Exploitation.", "isCorrect": false },
-      { "id": "q65_o4", "text": "Elevation of privileges.", "isCorrect": false },
-      { "id": "q65_o5", "text": "Session hijacking.", "isCorrect": false },
-      { "id": "q65_o6", "text": "Information disclosure.", "isCorrect": false }
-    ],
-    "hint": "Pertenece al acrónimo STRIDE.",
-    "explanation": "STRIDE incluye: Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service y Elevation of Privilege."
-  },
+{
+  "id": "q65",
+  "questionText": "En la técnica de modelado de amenazas STRIDE, ¿cuáles de las siguientes opciones pertenecen al modelo?",
+  "type": "multiple",
+  "options": [
+    { "id": "q65_o1", "text": "Tampering.", "isCorrect": true },
+    { "id": "q65_o2", "text": "Information destruction.", "isCorrect": false },
+    { "id": "q65_o3", "text": "Exploitation.", "isCorrect": false },
+    { "id": "q65_o4", "text": "Elevation of privileges.", "isCorrect": true },
+    { "id": "q65_o5", "text": "Session hijacking.", "isCorrect": false },
+    { "id": "q65_o6", "text": "Information disclosure.", "isCorrect": true }
+  ],
+  "hint": "Recuerda el acrónimo: S-T-R-I-D-E.",
+  "explanation": "STRIDE incluye: Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service y Elevation of Privilege."
+},
   {
     "id": "q66",
     "questionText": "Lista blanca de URLs o IP permitidas para restringir destinos de solicitudes. ¿Qué amenaza mitiga?",
@@ -1376,19 +1376,19 @@ export const initialBank: Question[] =
     "hint": "Repetición exitosa del ataque.",
     "explanation": "La reproducibilidad evalúa qué tan fácil es para un atacante repetir el ataque de manera confiable y obtener el mismo resultado."
   },
-  {
-    "id": "q107",
-    "questionText": "¿Qué ocurre cuando un servidor permite solicitudes maliciosas sin validación en una API?",
-    "type": "single",
-    "options": [
-      { "id": "q107_o1", "text": "La API realiza un análisis de tráfico.", "isCorrect": false },
-      { "id": "q107_o2", "text": "Se produce un SSRF.", "isCorrect": true },
-      { "id": "q107_o3", "text": "Se produce un ataque DDoS.", "isCorrect": false },
-      { "id": "q107_o4", "text": "La API no responde.", "isCorrect": false }
-    ],
-    "hint": "Server-Side Request Forgery.",
-    "explanation": "Sin validación, un servidor puede ser engañado para realizar peticiones internas o externas no autorizadas en nombre del atacante (SSRF)."
-  },
+{
+  "id": "q107",
+  "questionText": "¿Qué vulnerabilidad ocurre cuando un atacante induce a una API a realizar peticiones HTTP hacia un dominio arbitrario o recursos internos?",
+  "type": "single",
+  "options": [
+    { "id": "q107_o1", "text": "Análisis de tráfico malicioso.", "isCorrect": false },
+    { "id": "q107_o2", "text": "Server-Side Request Forgery (SSRF).", "isCorrect": true },
+    { "id": "q107_o3", "text": "Denegación de Servicio Distribuido (DDoS).", "isCorrect": false },
+    { "id": "q107_o4", "text": "Cross-Site Scripting (XSS).", "isCorrect": false }
+  ],
+  "hint": "El servidor es forzado a realizar una petición desde su propia infraestructura.",
+  "explanation": "El SSRF ocurre cuando el servidor no valida la URL de destino y realiza peticiones a servicios internos o externos, permitiendo saltarse firewalls o acceder a metadatos de la nube."
+},
   {
     "id": "q108",
     "questionText": "¿Qué pasa si una API expone más datos de los necesarios?",
